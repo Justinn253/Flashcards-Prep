@@ -1,0 +1,539 @@
+[
+  {
+    "title": "What does SOLID stand for?",
+    "subject": "SOLID Design Principles",
+    "definition": ["Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "1"
+  }, {
+    "title": "Single Responsibility",
+    "subject": "SOLID Design Principles",
+    "definition": ["A class should have one and only one responsibility.", "Narrow down the behavior of a class.", "Kind of like inheritance."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "2"
+  }, {
+    "title": "Open / Closed",
+    "subject": "SOLID Design Principles",
+    "definition": ["Open for extension but closed for modification.", "Promotes re-utilization.", "Split differing functionality into different classes and make a parent interface.", "Extension can now be made by making new classes."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "3"
+  }, {
+    "title": "Liskov Substitution",
+    "subject": "SOLID Design Principles",
+    "definition": ["Subtypes should be replaceable by their base types.", "All depending classes should not break with new additions to super class.", "Create a manager so each class can cherry pick functionality."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "4"
+  }, {
+    "title": "Interface Segregation",
+    "subject": "SOLID Design Principles",
+    "definition": ["Many specific interfaces are better than a general interface.", "More interfaces is better than too little.", "Allows classes to implement specific interfaces with specific functionality."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "5"
+  }, {
+    "title": "Dependency Inversion",
+    "subject": "SOLID Design Principles",
+    "definition": ["One should depend on abstraction and not concrete instances.", "Call interfaces and not concrete classes."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "6"
+  }, {
+    "title": "Abstraction",
+    "subject": "OOP Pillars",
+    "definition": ["Hide away the implementation details inside something.", "Basically have functions that perform tasks instead of creating the functionality yourself."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "7"
+  }, {
+    "title": "Encapsulation",
+    "subject": "OOP Pillars",
+    "definition": ["Each object should control its own state.", "Limit what pieces of your code can access.", "Make things inaccessible if they aren't needed.", "This is a way to integrate abstraction."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "8"
+  }, {
+    "title": "Inheritance",
+    "subject": "OOP Pillars",
+    "definition": ["Lets one object inherit the properties of another.", "Refers to super/sub classes."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "9"
+  }, {
+    "title": "Polymorphism",
+    "subject": "OOP Pillars",
+    "definition": ["When two types share an inheritance chain, they can be used interchangably with no errors or assertions.", "Basically should be able to user inherited functions with no issues."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "10"
+  }, {
+    "title": "Different Types of Design Patterns",
+    "subject": "Design Patterns",
+    "definition": ["Creational, Structural, Behavioral"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "11"
+  }, {
+    "title": "Singleton",
+    "subject": "Design Patterns",
+    "definition": ["Object that can only be instantiated once ex: settings.", "Method to check if the instance is already created."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "12"
+  }, {
+    "title": "Prototype",
+    "subject": "Design Patterns",
+    "definition": ["(Clone) Alternative way to implement inheritance.", "Instead of inheriting from a class, you inherit functionality from an object thats already been created.", "Javascript supports it with Object.create()"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "13"
+  }, {
+    "title": "Builder",
+    "subject": "Design Patterns",
+    "definition": ["Objects are created step by step rather than using the constructor.", "Return the object for each method so you can implement method chaining."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "14"
+  }, {
+    "title": "Factory",
+    "subject": "Design Patterns",
+    "definition": ["Instead of using 'new' keyword, we use functions to do it for us."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "15"
+  }, {
+    "title": "Facade",
+    "subject": "Design Patterns",
+    "definition": ["Simplified API to hide low-level details in your code."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "16"
+  }, {
+    "title": "Proxy",
+    "subject": "Design Patterns",
+    "definition": ["(Substitute) Replace target object with a proxy.", "Way to add functionality like operriding get and set methods."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "17"
+  }, {
+    "title": "Iterator",
+    "subject": "Design Patterns",
+    "definition": ["Pull-based system.", "Allows you to traverse through a collection of objects.", "Already abstracted in most languages through for loops."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "18"
+  }, {
+    "title": "Observer",
+    "subject": "Design Patterns",
+    "definition": ["Push-based system.", "Allows many objects to subscribe to events that are broadcast by another object."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "19"
+  }, {
+    "title": "Mediator",
+    "subject": "Design Patterns",
+    "definition": ["Middleman/Broker."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "20"
+  }, {
+    "title": "State",
+    "subject": "Design Patterns",
+    "definition": ["Object behaves differently based on the state/data of an application."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "21"
+  }, {
+    "title": "Dev Environment",
+    "subject": "Dev Environments",
+    "definition": ["Where developers write and modify code.", "Controlled environment where devs create and test individual code modules.", "Unit testing takes place here."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "22"
+  }, {
+    "title": "Uat Environment",
+    "subject": "Dev Environments",
+    "definition": ["Testing is performed by end user or customer where they use their own environment.", "Final testing phase before deployment.", "Focused on real world scenarios."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "23"
+  }, {
+    "title": "Pre-Prod Environment",
+    "subject": "Dev Environments",
+    "definition": ["Controlled and closely replicates setup that simulates the prod environment.", "Main goal is to test in an environment as close as possible to prod."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "24"
+  }, {
+    "title": "Prod Environment",
+    "subject": "Dev Environments",
+    "definition": ["The live environment where software is accessed by end users.", "Monitoring and maintenance is essential in prod."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "25"
+  }, {
+    "title": "Bubble Sort",
+    "subject": "Sorting Algorithms",
+    "definition": ["O(n^2)", "Compare consecutive items, if they are out of place, we swap them.", "A sorted partition is formed at the end of the array."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "26"
+  }, {
+    "title": "Selection Sort",
+    "subject": "Sorting Algorithms",
+    "definition": ["O(n^2)", "Select the current minimum and loop through array looking for a smaller item, then swap.", "Set the next item as the current minimum and repeat."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "27"
+  }, {
+    "title": "Insertion Sort",
+    "subject": "Sorting Algorithms",
+    "definition": ["O(n^2)", "Start from left and move right through array.", "If item on left is larger, swap and the check the next item to the left until the item is in the correct location."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "28"
+  }, {
+    "title": "Merge Sort",
+    "subject": "Sorting Algorithms",
+    "definition": ["O(nlogn)", "Recursive, divide-and-conquer.", "Split array into halves until you are left with individual items.", "Examine each item and merge them into temporary arrays in order.", "Merge the arrays into new arrays in the correct order.", "Continue until the arrays are sorted"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "29"
+  }, {
+    "title": "Quick Sort",
+    "subject": "Sorting Algorithms",
+    "definition": ["O(n^2) - O(nlogn)", "Recursive, pivot.", "Pivot must be in the correct position in final, sorted array.", "This means all items to the left are smaller and to the right are larger.", "First, select a pivot and move it to the end of the array.", "Then, find 2 items: the first item that is smaller than the pivot from the right side and the first that it larger than the pivot from the left side.", "Then swap both items.", "Stop when the indices overlap when looking for a new item and swap item from left (larger).", "Then swap item from left with pivot.", "Check if pivot meets pivot condition.", "Now perform these steps on right and left sides.", "Note: pick pivot based on median of threes."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "30"
+  }, {
+    "title": "REST",
+    "subject": "Rest vs GraphQL",
+    "definition": ["Tells you everything they know, whether you request it or not.", "Architectural style that relies on HTTP requests to interact with resources.", "Each resource has a unique identifier called a URI.", "GET PUT POST DELETE.", "Responds in JSON or XML."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "31"
+  }, {
+    "title": "GraphQL",
+    "subject": "Rest vs GraphQL",
+    "definition": ["Tells you what is necessary.", "Returns exactly what is requested.", "Query language that allows clients to retrieve data from multiple data sources in a single API call.", "Uses schemas to query.", "Uses a resolver to retrieve the data requested in the query.", "Mutations are used to modify the data on the server.", "Protocol agnostic.", "Can use a single API endpoint that allows the client to query all of the data in a single request using a query."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "32"
+  }, {
+    "title": "How are they similar",
+    "subject": "Rest vr GraphQL",
+    "definition": ["Both are used to build APIs.", "Both use frameworks and libraries to handle network details.", "Both operate over HTTP.", "Both can handle requests and responses using JSON."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "33"
+  }, {
+    "title": "Coupling",
+    "subject": "Coupling and Cohesion",
+    "definition": ["How much two parts of our system depend on each other.", "We want to aim for as loose coupling as possible.", "Steps to decrease coupling: favor interfaces and composition over inheritance.", "Avoid method call chains.\"Tell, don't ask.\" Utilize events."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "34"
+  }, {
+    "title": "Cohesion",
+    "subject": "Coupling and Cohesion",
+    "definition": ["How the internals of one class work together.", "We want to aim for as high cohesion as possible.", "Steps for increasing cohesion: Naming functionalities/classes with specific terms.", "Group by feature/behavior."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "35"
+  }, {
+    "title": "Black Box",
+    "subject": "Types of Testing (Box)",
+    "definition": ["No knowledge of client network and apps, but it emulates real-world threats and is performed by independent team.", "Pros: Fast, simplistic.", "Cons: Not comprehensive."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "36"
+  }, {
+    "title": "Grey Box",
+    "subject": "Types of Testing (Box)",
+    "definition": ["A combination of black and white box testing where you have some knowledge of internal systems.", "Pros: Jack of all trades.", "Cons: Master of none."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "37"
+  }, {
+    "title": "White Box",
+    "subject": "Types of Testing (Box)",
+    "definition": ["You have full knowledge of client network and apps.", "including code, network diagrams, and system access.", "Pros: Comprehensive, no limits to the bugs you can find, preventative.", "Cons: Easy to accidentally look over simple bugs."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "38"
+  }, {
+    "title": "Git Flow",
+    "subject": "Branching Strategies",
+    "definition": ["Characterized by two main branches: Master and Dev. Long lived branches and larger commits. Master branch represents the official project history. Dev branch serves as an integration branch for features. Can have additional branches such as feature, release, and hotfix. Advantages include structure and parallel development suitable for larger teams where features need to be developed separately before merging."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "39"
+  }, {
+    "title": "Trunk Based",
+    "subject": "Branching Strategies",
+    "definition": ["Short lived branches with fewer commits. Developers create feature branches for each new feature and merge back into main branch. All developers work on the main branch. Advantages includes reduced merge conflicts and accelerated delivery. Works best in continous development environments."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "40"
+  }, {
+    "title": "Array",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: O(1), Search = O(n), Insertion = O(n), Deletion = O(n)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "41"
+  }, {
+    "title": "Stack",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "42"
+  }, {
+    "title": "Queue",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "43"
+  }, {
+    "title": "Hash Table",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(n), Deletion = O(n)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "44"
+  }, {
+    "title": "Singly-Linked List",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(n), Deletion = O(n)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "45"
+  }, {
+    "title": "Doubly-Linked List",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "46"
+  }, {
+    "title": "Binary Search Tree/Binary Tree",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)", "Worst: Access = O(n), Search = O(n), Insertion = O(n), Deletion = O(n)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "47"
+  }, {
+    "title": "AVL Tree",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)", "Worst: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "48"
+  }, {
+    "title": "Red Black Tree",
+    "subject": "Data Structure Time Complexities",
+    "definition": ["Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)", "Worst: Access = O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)"],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "49"
+  }, {
+    "title": "ES6 Features",
+    "subject": "ES6 Features",
+    "definition": ["let, const, arrow functions, spread (...), for of, classes, promises, string.includes(), array.from(), array.find(), array.findIndex(), number.inInteger(), isNaN()."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "50"
+  }, {
+    "title": "BFS",
+    "subject": "Graph Traversal",
+    "definition": ["Queue (FIFO)", "Time Complexity: O(|V| + |E|)", "Expands horizontally before vertically.", "Algorithm: Use 2 arrays, 1 to track visited nodes and 1 to track the queue. Add the root node to the queue. While the queue isn't empty, pop(), then add all non-visited, adjacent nodes of the popped node to the queue and visited arrays. End when target node is found."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "51"
+  }, {
+    "title": "DFS",
+    "subject": "Graph Traversal",
+    "definition": ["Stack (LIFO)", "Time Complexity: O(|V| + |E|)", "Expands vertically before horizontally.", "Algorithm: Use 2 arrays, 1 to track visited nodes and 1 to track the queue. Add the root node to the stack. While the stack isn't empty, pop(), then add all non-visited, adjacent nodes of the popped node to the queue and visited arrays. End when target node is found."],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": "52"
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }, {
+    "title": "",
+    "subject": "",
+    "definition": [""],
+    "hint": "",
+    "knowledgeLevel": "",
+    "meta": "",
+    "id": ""
+  }
+]

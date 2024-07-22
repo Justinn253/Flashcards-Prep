@@ -1,0 +1,188 @@
+body {
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 95vw;
+}
+
+.flash-container {
+  border: 2px solid gray;
+  border-radius: 1em;
+  padding: 1em;
+  height: 50vh;
+  width: 60vw;
+  font-size: 20px;
+  background-color: rgb(206, 204, 204);
+  color: black;
+  outline: none;
+
+  &:hover {
+    background-color: rgb(168, 168, 168);
+    transition: background-color .25s ease-in-out;
+  }
+}
+
+.lower-buttons-container {
+  height: 10vh;
+  width: 61vw;
+  display: flex;
+  justify-content: center;
+  border: 2px solid gray;
+  align-items: center;
+  background-color: rgb(206, 204, 204);
+  border-radius: 1em;
+  padding: 0 1em 0 1em;
+  margin-top: 4vh;
+}
+
+.title-container {
+  margin: 0 1vw 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.flash-subject {
+  font-size: 16px;
+  align-self: center;
+  margin-right: 4px;
+}
+
+.flash-content {
+  margin: 0 1vw 0 1vw;
+}
+
+.flash-content-hidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36vh;
+}
+
+.ratings-container {
+  width: 35vw;
+  display: flex;
+  gap: 2em;
+  justify-content: start;
+  align-items: center;
+}
+
+.actions-container {
+  width: 25vw;
+  display: flex;
+  gap: 2em;
+  justify-content: end;
+  align-items: center;
+}
+
+.action-button {
+  height: 6vh;
+  width: 8vw;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 2px solid gray;
+  color: black;
+  background-color: cornflowerblue;
+
+  &:hover {
+    background-color: rgb(76, 132, 236);
+    transition: background-color .25s;
+  }
+}
+
+.rating-button {
+  height: 6vh;
+  width: 4vw;
+  font-size: 24px;
+  border-radius: 12px;
+  border: 2px solid gray;
+  color: black;
+  background-color: darkgray;
+
+  &:hover {
+    background-color: rgb(128, 127, 127);
+    transition: background-color .25s;
+  }
+}
+
+.line-break {
+  border-top: 1px solid gray;
+  margin: 1vh 0 1vh 0;
+}
+
+.sidebar-container {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 80vh;
+  padding: 1vh 0 1vh 0;
+  background-color: rgb(206, 204, 204);
+  color: black;
+  border: 2px solid gray;
+  cursor:default;
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 4px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-flow: column;
+  overflow-y: auto;
+}
+
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1vw 0 1vw;
+  padding: 0 4px 0 4px;
+  border-bottom: 1px solid darkgray;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: rgb(168, 168, 168);
+    transition: background-color .1s;
+  }
+}
