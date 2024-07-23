@@ -394,7 +394,7 @@
   }, {
     "title": "ES6 Features",
     "subject": "ES6 Features",
-    "definition": ["let, const, arrow functions, spread (...), for of, classes, promises, string.includes(), array.from(), array.find(), array.findIndex(), number.inInteger(), isNaN()."],
+    "definition": ["let, const, arrow functions, spread (...), for of, classes, promises, string.includes(), array.from(), array.find(), array.findIndex(), number.inInteger(), isNaN(), destructuring, rest operator, async/await."],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
@@ -416,69 +416,69 @@
     "meta": "",
     "id": "52"
   }, {
-    "title": "",
-    "subject": "",
+    "title": "What is Redux",
+    "subject": "Redux",
     "definition": [""],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "53"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "Store",
+    "subject": "Redux",
+    "definition": ["The single source of truth that holds the state of your application."],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "54"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "Actions",
+    "subject": "Redux",
+    "definition": ["Javascript objects that represent an intention to change the state."],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "55"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "Reducers",
+    "subject": "Redux",
+    "definition": ["Functions that take the current state and an action, and returns a new state."],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "56"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "Dispatch",
+    "subject": "Redux",
+    "definition": ["A function to send actions to the store."],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "57"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "Selectors",
+    "subject": "Redux",
+    "definition": ["Functions that extract and derive specific pieces of data from the store."],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "58"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "What is the DOM",
+    "subject": "DOM",
+    "definition": ["Document Object Model", "Works like a tree"],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "59"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "DOM Manipulation Techniques",
+    "subject": "DOM",
+    "definition": ["getElementById, createElement, classList.add/remove, addEventListener, this, fetching data, innerHTML, toggle, innerWidth"],
     "hint": "",
     "knowledgeLevel": "",
     "meta": "",
-    "id": ""
+    "id": "60"
   }, {
     "title": "",
     "subject": "",

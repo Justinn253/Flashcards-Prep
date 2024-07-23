@@ -1,5 +1,6 @@
 import { KeyboardEvent, useState } from 'react';
-import Flashcard from './Flashcard';
+import Flashcard from './components/Flashcard';
+import SideBar from './components/SideBar';
 import dataSet from './assets/flashcards.json';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
     }
   }
 
-  function revealAnswer() {
+  const revealAnswer = () => {
     if (!flipped) {
       setFlipped(true);
     } else {
@@ -52,7 +53,6 @@ function App() {
     }
   }
 
-  //return <div><Flashcard /></div>
   return (
     <div onKeyDown={handleEnter}>
       <div className="main-container">
@@ -69,7 +69,7 @@ function App() {
             </div>
             <div className="line-break"></div>
             <div className={flipped ? 'flash-content' : ''} hidden={!flipped}>
-              {questions[currentIndex].definition.map((item: String) => {
+              {questions[currentIndex].definition.map((item: string) => {
                 return <li key={item}>{item}</li>
               })}
             </div>
@@ -96,28 +96,6 @@ function App() {
     </div>
   );
   
-}
-
-const SideBar = ({questions, nav}: any) => {
-
-
-  return(
-    <div className='sidebar-container'>
-      <div className='sidebar-title'>
-        Table of Contents
-      </div>
-      <div className='sidebar-content'>
-        {questions.map((item: any) => {
-          return (
-            <div className='sidebar-item' key={item.id} onClick={() => nav(item.id)}>
-              <div>{item.title}</div> 
-              <div>{item.id}</div>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-  )
 }
 
 export default App
