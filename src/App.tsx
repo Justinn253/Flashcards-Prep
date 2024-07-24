@@ -4,7 +4,8 @@ import SideBar from './components/SideBar';
 import dataSet from './assets/flashcards.json';
 
 function App() {
-  const [questions, setQuestions] = useState(dataSet)
+  const [questions, setQuestions] = useState(dataSet);
+  const [currentQuestion, setCurrentQuestion] = useState(questions[0]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
 
@@ -13,6 +14,8 @@ function App() {
     if (currentIndex < questions.length - 1) {
       setFlipped(false);
       setCurrentIndex(currentIndex + 1);
+      const temp = questions[currentIndex + 1];
+      setCurrentQuestion(temp);
     }
   }
 
@@ -20,6 +23,7 @@ function App() {
     if (currentIndex > 0) {
       setFlipped(false);
       setCurrentIndex(currentIndex - 1);
+      setCurrentQuestion(questions[currentIndex - 1]);
     }
   }
 
@@ -32,12 +36,19 @@ function App() {
   }
 
   const assignKnowledge = (level: string) => {
+    const temp = questions[currentIndex];
+    temp.knowledgeLevel = level
+    setCurrentQuestion(currentQuestion => ({
+      ...currentQuestion,
+      ...temp
+    }));
     questions[currentIndex].knowledgeLevel = level;
   }
 
   const getNav = (location: string) => {
     setFlipped(false);
     setCurrentIndex(Number(location) - 1);
+    setCurrentQuestion(questions[Number(location) - 1]);
   }
 
   const handleEnter = (event: KeyboardEvent) => {
@@ -48,6 +59,7 @@ function App() {
         if (currentIndex < questions.length - 1) {
           setFlipped(false);
           setCurrentIndex(currentIndex + 1);
+          setCurrentQuestion(questions[currentIndex + 1]);
         }
       }
     }
@@ -61,7 +73,7 @@ function App() {
           <div className="flash-container" onClick={revealAnswer} tabIndex={0}>
             <div className="title-container">
               <div className="flash-title">
-                { questions[currentIndex].title }
+                ({ currentQuestion.knowledgeLevel }) { questions[currentIndex].title }
               </div>
               <div className='flash-subject'>
                 { questions[currentIndex].subject } | { currentIndex + 1 } / { questions.length }

@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 
 const SideBar = ({questions, nav}: any) => {
@@ -11,7 +12,7 @@ const SideBar = ({questions, nav}: any) => {
         {questions.map((item: any) => {
           return (
             <div className='sidebar-item' key={item.id} onClick={() => nav(item.id)}>
-              <div>{item.title}</div> 
+              <div><b>({item.knowledgeLevel})</b> {item.title}</div> 
               <div>{item.id}</div>
             </div>
           )
