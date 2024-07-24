@@ -416,9 +416,9 @@
     "meta": "",
     "id": "52"
   }, {
-    "title": "What is Redux",
+    "title": "What is Redux / Key Concepts",
     "subject": "Redux",
-    "definition": [""],
+    "definition": ["Redux is an open-source JavaScript library for managing and centralizing application state.", "Store, Actions, Reducers, Dispatch, Selectors"],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
@@ -426,7 +426,7 @@
   }, {
     "title": "Store",
     "subject": "Redux",
-    "definition": ["The single source of truth that holds the state of your application."],
+    "definition": ["The single source of truth that holds the state of your application.", "A globalized state of your application."],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
@@ -434,7 +434,7 @@
   }, {
     "title": "Actions",
     "subject": "Redux",
-    "definition": ["Javascript objects that represent an intention to change the state."],
+    "definition": ["Javascript objects that represent an intention to change the state.", "Describes what you want to do. Function that returns an object."],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
@@ -442,7 +442,7 @@
   }, {
     "title": "Reducers",
     "subject": "Redux",
-    "definition": ["Functions that take the current state and an action, and returns a new state."],
+    "definition": ["Functions that take the current state and an action, and returns a new state.", "Describes how your actions transform your state into a new state."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
@@ -450,7 +450,7 @@
   }, {
     "title": "Dispatch",
     "subject": "Redux",
-    "definition": ["A function to send actions to the store."],
+    "definition": ["A function to send actions to the store.", "Way to execute an action."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
@@ -480,53 +480,269 @@
     "meta": "",
     "id": "60"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "What is the DOM",
+    "subject": "DOM",
+    "definition": ["Document Object Model. Works like a tree."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
     "id": "61"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "How to add an element to another element",
+    "subject": "DOM",
+    "definition": ["append(element)", "Can append strings or other elements to an existing element."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
     "id": "62"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "How to create an element",
+    "subject": "DOM",
+    "definition": ["document.createElement('div')", "Way to create any element. Replace div with whatever. Can be appended with append()."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
     "id": "63"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "How to get just the text in an element",
+    "subject": "DOM",
+    "definition": ["innerText", "Just the text that is within."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
     "id": "64"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "How to get ALL text in an element",
+    "subject": "DOM",
+    "definition": ["textContent", "Shows all text with spacing and styling, even when hidden."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
     "id": "65"
   }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
+    "title": "How to assign html to an element",
+    "subject": "DOM",
+    "definition": ["innerHTML", "Way to assign html through javascript. Not safe because users may be able to insert their own html."],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
     "id": "66"
+  }, {
+    "title": "How to select specific elements",
+    "subject": "DOM",
+    "definition": ["document.getElementById(id)", "document.querySelector('#elementId')"],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "67"
+  }, {
+    "title": "How to delete an element",
+    "subject": "DOM",
+    "definition": ["element.remove()", "Completely remove an element from DOM."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "68"
+  }, {
+    "title": "Methods to deal with attributes",
+    "subject": "DOM",
+    "definition": ["element.getAttribute(attribute)", "element.setAttribute(attribute)", "element.removeAttribute(attribute)"],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "69"
+  }, {
+    "title": "How to modify classes of an element",
+    "subject": "DOM",
+    "definition": ["classList.add(class)", "classList.remove(class)"],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "70"
+  }, {
+    "title": "How to toggle classes of an element",
+    "subject": "DOM",
+    "definition": ["classList.toggle(class)", "classList.toggle(class, boolean)", "Will remove if existing and add if not. Also can do classList.gottle(class, boolean) to only add or remove class."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "71"
+  }, {
+    "title": "header",
+    "subject": "HTML Element Tags",
+    "definition": ["Usually where nav and logo goes."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "72"
+  }, {
+    "title": "main",
+    "subject": "HTML Element Tags",
+    "definition": ["Consists of sections. Contains stuff like h1, p, sidebar (aside), article, etc. Only 1 main per page."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "73"
+  }, {
+    "title": "section",
+    "subject": "HTML Element Tags",
+    "definition": ["Contains stuff that is related to each other on screen."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "74"
+  }, {
+    "title": "article",
+    "subject": "HTML Element Tags",
+    "definition": ["Standalone content that can be placed anywhere and have the same meaning."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "75"
+  }, {
+    "title": "footer",
+    "subject": "HTML Element Tags",
+    "definition": ["Uses anchors like header, but not nav links. If important, doesn't go in footer."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "76"
+  }, {
+    "title": "head",
+    "subject": "HTML Element Tags",
+    "definition": ["Contains meta data of the website. Stuff you don't see."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "77"
+  }, {
+    "title": "!DOCTYPE",
+    "subject": "HTML Element Tags",
+    "definition": ["Tells the browser this is an HTML document and this is HTML5."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "78"
+  }, {
+    "title": "title",
+    "subject": "HTML Element Tags",
+    "definition": ["Goes in head. Shows up on search results and in tab."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "79"
+  }, {
+    "title": "style",
+    "subject": "HTML Element Tags",
+    "definition": ["Where you put css or link to your stylesheet using link."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "80"
+  }, {
+    "title": "ul / ol",
+    "subject": "HTML Element Tags",
+    "definition": ["Unordered and Ordered list."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "81"
+  }, {
+    "title": "How to align on x-axis",
+    "subject": "Flex Box",
+    "definition": ["justify-content", "Aligns content on x-axis."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "82"
+  }, {
+    "title": "How to align on y-axis",
+    "subject": "Flex Box",
+    "definition": ["align-items", "Aligns content on y-axis."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "83"
+  }, {
+    "title": "How to set flex direction and wrap",
+    "subject": "Flex Box",
+    "definition": ["flex-flow", "Determines the flex direction and flex-wrap."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "84"
+  }, {
+    "title": "How to allow children to wrap",
+    "subject": "Flex Box",
+    "definition": ["flex-wrap", "Can be set to allow children to wrap if needed. Unlocks align-content."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "85"
+  }, {
+    "title": "How to allow wrapping content to be aligned",
+    "subject": "Flex Box",
+    "definition": ["align-content", "Allows wrapping content to be aligned around content axis."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "86"
+  }, {
+    "title": "How to add spacing between children",
+    "subject": "Flex Box",
+    "definition": ["gap", "Adds a gap between children."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "87"
+  }, {
+    "title": "How to allow children to take up remaining space",
+    "subject": "Flex Box",
+    "definition": ["flex-grow", "Can be assigned to individual children. They will take up the remaining space if set to 1."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "88"
+  }, {
+    "title": "How to control how fast a child shrinks",
+    "subject": "Flex Box",
+    "definition": ["flex-shrink", "Can be assigned to individual children. Controls how fast this item shrinks compared to others. Set with number value. If set to 0, it will not shrink."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "89"
+  }, {
+    "title": "How to override width of child",
+    "subject": "Flex Box",
+    "definition": ["flex-basis", "Overrides width of a child."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "90"
+  }, {
+    "title": "What is the shorthand for the last 3 questions",
+    "subject": "Flex Box",
+    "definition": ["flex", "Shorthand for grow, shrink, and basis."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "91"
+  }, {
+    "title": "How to override parent alignment",
+    "subject": "Flex Box",
+    "definition": ["align-self", "Overrides parent align for an individual item."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "92"
+  }, {
+    "title": "How to override the order of a child",
+    "subject": "Flex Box",
+    "definition": ["order", "Overrides where this element will appear in flex order."],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "id": "93"
   }, {
     "title": "",
     "subject": "",
@@ -534,6 +750,6 @@
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
-    "id": "67"
+    "id": "94"
   }
 ]
