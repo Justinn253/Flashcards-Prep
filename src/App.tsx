@@ -1,15 +1,25 @@
-import { KeyboardEvent, useState } from 'react';
+import { ChangeEvent, ChangeEventHandler, KeyboardEvent, useEffect, useState } from 'react';
 import Flashcard from './components/Flashcard';
 import SideBar from './components/SideBar';
+import LowerButtons from './components/LowerButtons';
 import dataSet from './assets/flashcards.json';
+import iFlashcard from './interfaces/iFlashcard';
+import iCategory from './interfaces/iCategory';
 
 function App() {
-  const [questions, setQuestions] = useState(dataSet);
-  const [currentQuestion, setCurrentQuestion] = useState(questions[0]);
+  const [questions, setQuestions] = useState<iFlashcard[]>([new iFlashcard]);
+  const [currentQuestion, setCurrentQuestion] = useState<iFlashcard>(questions[0]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
 
+  useEffect(() => {
+    setQuestions(dataSet);
+  }, [])
   
+  /**
+   * Method call to change to the next page. 
+   * @updates flipped, currentIndex, currentQuestion
+   */
   const next = () => {
     if (currentIndex < questions.length - 1) {
       setFlipped(false);
@@ -19,6 +29,10 @@ function App() {
     }
   }
 
+  /**
+   * Method call to change to the previous page.
+   * @updates flipped, currentIndex, currentQuestion
+   */
   const back = () => {
     if (currentIndex > 0) {
       setFlipped(false);
@@ -27,6 +41,21 @@ function App() {
     }
   }
 
+  /**
+   * Method call to change the current question to the selected question from table of contents.
+   * @param location the question to be navigated to
+   * @updates flipped, currentIndex, currentQuestion
+   */
+  const getNav = (location: string) => {
+    setFlipped(false);
+    setCurrentIndex(Number(location) - 1);
+    setCurrentQuestion(questions[Number(location) - 1]);
+  }
+
+  /**
+   * Method call to flip the current question.
+   * @updates flipped
+   */
   const revealAnswer = () => {
     if (!flipped) {
       setFlipped(true);
@@ -35,22 +64,23 @@ function App() {
     }
   }
 
+  /**
+   * Updates the knowledge level of the current question.
+   * @param level the new knowledge level to be assigned
+   * @udpates currentQuestion
+   */
   const assignKnowledge = (level: string) => {
     const temp = questions[currentIndex];
     temp.knowledgeLevel = level
-    setCurrentQuestion(currentQuestion => ({
-      ...currentQuestion,
-      ...temp
-    }));
+    setCurrentQuestion(() => ({ ...temp }));
     questions[currentIndex].knowledgeLevel = level;
   }
 
-  const getNav = (location: string) => {
-    setFlipped(false);
-    setCurrentIndex(Number(location) - 1);
-    setCurrentQuestion(questions[Number(location) - 1]);
-  }
-
+  /**
+   * Method call to handle enter key press and change to next question.
+   * @param event keyboard event used to check if button was 'enter'
+   * @updates flipped, currentIndex, currentQuestion
+   */
   const handleEnter = (event: KeyboardEvent) => {
     if (event.key === 'Enter') {
       if (!flipped) {
@@ -65,48 +95,77 @@ function App() {
     }
   }
 
+  /**
+   * Method call to filter questions list by category.
+   * @param e event from select element
+   * @updates questions
+   */
+  const filterQuestions = (e: ChangeEvent<HTMLSelectElement>, type: string) => {
+    let filterRes = dataSet;
+    switch (type) {
+      case 'category':
+        if (e.target.value !== 'none') {
+          filterRes = dataSet.filter((item: iFlashcard) => item.category == e.target.value);
+        }
+        break;
+      case 'knowledge':
+        filterRes = questions.filter((item: iFlashcard) => item.knowledgeLevel <= e.target.value);
+        break;
+      default:
+        break;
+    }
+    setQuestions(filterRes);
+  }
+
+  const randomizeQuestions = () => {
+    const temp = questions;
+    let i = temp.length;
+
+    while (i != 0) {
+      let j = Math.floor(Math.random() * i);
+      i--;
+
+      [temp[i], temp[j]] = [temp[j], temp[i]];
+    }
+    setQuestions(temp);
+  }
+
   return (
     <>
       <header className='page-header'>
-        test
+        <section className='header-filter-section' id='header-filter-section'>
+          <select className='filter-select' onChange={(e) => filterQuestions(e, 'category')} title='Filter by Category'>
+            <option value="none">No Category Filter</option>
+            <option value="fundamentals">Fundamentals</option>
+            <option value="frontend">Frontend</option>
+            <option value="dsa">DSA</option>
+            <option value="general" >General</option>
+          </select>
+          <select className='filter-select' onChange={(e) => filterQuestions(e, 'knowledge')} title='Filter by Knowledge Level'>
+            <option value="5">All knowledge levels</option>
+            <option value="4">4's and below</option>
+            <option value="3">3's and below</option>
+            <option value="2">2's and below</option>
+            <option value="1">Only 1's</option>
+          </select>
+        </section>
+        <section className='header-buttons-section' id='header-buttons-section'>
+          <button className='header-button'>R</button>
+        </section>
+        
       </header>
       <main className="main-container">
-        <SideBar questions={questions} nav={getNav}></SideBar>
-        <div>
-          <div className="flash-container" onClick={revealAnswer} tabIndex={0}>
-            <div className="title-container">
-              <div className="flash-title">
-                ({ currentQuestion.knowledgeLevel }) { questions[currentIndex].title }
-              </div>
-              <div className='flash-subject'>
-                { questions[currentIndex].subject } | { currentIndex + 1 } / { questions.length }
-              </div>
-            </div>
-            <div className="line-break"></div>
-            <div className={flipped ? 'flash-content' : ''} hidden={!flipped}>
-              {questions[currentIndex].definition.map((item: string) => {
-                return <li key={item}>{item}</li>
-              })}
-            </div>
-            <div className={flipped ? '' : 'flash-content-hidden'} hidden={flipped}>
-              <div>Flip to reveal answer</div>
-            </div>
-          </div>
-          <div className="lower-buttons-container">
-            <div className="ratings-container">
-              <button className="rating-button lowest" onClick={() => assignKnowledge('1')}>1</button>
-              <button className="rating-button low" onClick={() => assignKnowledge('2')}>2</button>
-              <button className="rating-button medium" onClick={() => assignKnowledge('3')}>3</button>
-              <button className="rating-button high" onClick={() => assignKnowledge('4')}>4</button>
-              <button className="rating-button highest" onClick={() => assignKnowledge('5')}>5</button>
-            </div>
-            <div className="actions-container">
-              <button className="action-button" onClick={revealAnswer}>Flip</button>
-              <button className="action-button" onClick={back}>Back</button>
-              <button className="action-button" onClick={next}>Next</button>
-            </div>
-          </div>
-        </div>
+        <section id='sidebar-section'>
+          <SideBar pQuestions={questions} pNav={getNav} pCurrentIndex={currentIndex}></SideBar>
+        </section>
+        <section id='flashcard-parent-section'>
+          <section id='flashcard-section'>
+            <Flashcard pQuestions={questions} pCurrentIndex={currentIndex} pCurrentQuestion={currentQuestion} pFlipped={flipped} pRevealAnswer={revealAnswer}></Flashcard>
+          </section>
+          <section id='lower-buttons-section'>
+            <LowerButtons pRevealAnswer={revealAnswer} pAssignKnowledge={assignKnowledge} pBack={back} pNext={next}></LowerButtons>
+          </section>
+        </section>
       </main>
       <footer className='page-footer'>
         test

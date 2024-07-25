@@ -2,754 +2,1245 @@
   {
     "title": "What does SOLID stand for?",
     "subject": "SOLID Design Principles",
-    "definition": ["Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion"],
+    "definition": [
+      "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion"
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "fundamentals",
     "id": "1"
-  }, {
+  },
+  {
     "title": "Single Responsibility",
     "subject": "SOLID Design Principles",
-    "definition": ["A class should have one and only one responsibility.", "Narrow down the behavior of a class.", "Kind of like inheritance."],
+    "definition": [
+      "A class should have one and only one responsibility.",
+      "Narrow down the behavior of a class.",
+      "Kind of like inheritance."
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "fundamentals",
     "id": "2"
-  }, {
+  },
+  {
     "title": "Open / Closed",
     "subject": "SOLID Design Principles",
-    "definition": ["Open for extension but closed for modification.", "Promotes re-utilization.", "Split differing functionality into different classes and make a parent interface.", "Extension can now be made by making new classes."],
+    "definition": [
+      "Open for extension but closed for modification.",
+      "Promotes re-utilization.",
+      "Split differing functionality into different classes and make a parent interface.",
+      "Extension can now be made by making new classes."
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "fundamentals",
     "id": "3"
-  }, {
+  },
+  {
     "title": "Liskov Substitution",
     "subject": "SOLID Design Principles",
-    "definition": ["Subtypes should be replaceable by their base types.", "All depending classes should not break with new additions to super class.", "Create a manager so each class can cherry pick functionality."],
+    "definition": [
+      "Subtypes should be replaceable by their base types.",
+      "All depending classes should not break with new additions to super class.",
+      "Create a manager so each class can cherry pick functionality."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "4"
-  }, {
+  },
+  {
     "title": "Interface Segregation",
     "subject": "SOLID Design Principles",
-    "definition": ["Many specific interfaces are better than a general interface.", "More interfaces is better than too little.", "Allows classes to implement specific interfaces with specific functionality."],
+    "definition": [
+      "Many specific interfaces are better than a general interface.",
+      "More interfaces is better than too little.",
+      "Allows classes to implement specific interfaces with specific functionality."
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "fundamentals",
     "id": "5"
-  }, {
+  },
+  {
     "title": "Dependency Inversion",
     "subject": "SOLID Design Principles",
-    "definition": ["One should depend on abstraction and not concrete instances.", "Call interfaces and not concrete classes."],
+    "definition": [
+      "One should depend on abstraction and not concrete instances.",
+      "Call interfaces and not concrete classes."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "6"
-  }, {
+  },
+  {
     "title": "Abstraction",
     "subject": "OOP Pillars",
-    "definition": ["Hide away the implementation details inside something.", "Basically have functions that perform tasks instead of creating the functionality yourself."],
+    "definition": [
+      "Hide away the implementation details inside something.",
+      "Basically have functions that perform tasks instead of creating the functionality yourself."
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "fundamentals",
     "id": "7"
-  }, {
+  },
+  {
     "title": "Encapsulation",
     "subject": "OOP Pillars",
-    "definition": ["Each object should control its own state.", "Limit what pieces of your code can access.", "Make things inaccessible if they aren't needed.", "This is a way to integrate abstraction."],
+    "definition": [
+      "Each object should control its own state.",
+      "Limit what pieces of your code can access.",
+      "Make things inaccessible if they aren't needed.",
+      "This is a way to integrate abstraction."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "8"
-  }, {
+  },
+  {
     "title": "Inheritance",
     "subject": "OOP Pillars",
-    "definition": ["Lets one object inherit the properties of another.", "Refers to super/sub classes."],
+    "definition": [
+      "Lets one object inherit the properties of another.",
+      "Refers to super/sub classes."
+    ],
     "hint": "",
     "knowledgeLevel": "4",
     "meta": "",
+    "category": "fundamentals",
     "id": "9"
-  }, {
+  },
+  {
     "title": "Polymorphism",
     "subject": "OOP Pillars",
-    "definition": ["When two types share an inheritance chain, they can be used interchangably with no errors or assertions.", "Basically should be able to user inherited functions with no issues."],
+    "definition": [
+      "When two types share an inheritance chain, they can be used interchangably with no errors or assertions.",
+      "Basically should be able to user inherited functions with no issues."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "10"
-  }, {
+  },
+  {
     "title": "Different Types of Design Patterns",
     "subject": "Design Patterns",
-    "definition": ["Creational, Structural, Behavioral"],
+    "definition": [
+      "Creational, Structural, Behavioral"
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "11"
-  }, {
+  },
+  {
     "title": "Singleton",
     "subject": "Design Patterns",
-    "definition": ["Object that can only be instantiated once ex: settings.", "Method to check if the instance is already created."],
+    "definition": [
+      "Object that can only be instantiated once ex: settings.",
+      "Method to check if the instance is already created."
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "fundamentals",
     "id": "12"
-  }, {
+  },
+  {
     "title": "Prototype",
     "subject": "Design Patterns",
-    "definition": ["(Clone) Alternative way to implement inheritance.", "Instead of inheriting from a class, you inherit functionality from an object thats already been created.", "Javascript supports it with Object.create()"],
+    "definition": [
+      "(Clone) Alternative way to implement inheritance.",
+      "Instead of inheriting from a class, you inherit functionality from an object thats already been created.",
+      "Javascript supports it with Object.create()"
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "13"
-  }, {
+  },
+  {
     "title": "Builder",
     "subject": "Design Patterns",
-    "definition": ["Objects are created step by step rather than using the constructor.", "Return the object for each method so you can implement method chaining."],
+    "definition": [
+      "Objects are created step by step rather than using the constructor.",
+      "Return the object for each method so you can implement method chaining."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "14"
-  }, {
+  },
+  {
     "title": "Factory",
     "subject": "Design Patterns",
-    "definition": ["Instead of using 'new' keyword, we use functions to do it for us."],
+    "definition": [
+      "Instead of using 'new' keyword, we use functions to do it for us."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "15"
-  }, {
+  },
+  {
     "title": "Facade",
     "subject": "Design Patterns",
-    "definition": ["Simplified API to hide low-level details in your code."],
+    "definition": [
+      "Simplified API to hide low-level details in your code."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "16"
-  }, {
+  },
+  {
     "title": "Proxy",
     "subject": "Design Patterns",
-    "definition": ["(Substitute) Replace target object with a proxy.", "Way to add functionality like overriding get and set methods."],
+    "definition": [
+      "(Substitute) Replace target object with a proxy.",
+      "Way to add functionality like overriding get and set methods."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "17"
-  }, {
+  },
+  {
     "title": "Iterator",
     "subject": "Design Patterns",
-    "definition": ["Pull-based system.", "Allows you to traverse through a collection of objects.", "Already abstracted in most languages through for loops."],
+    "definition": [
+      "Pull-based system.",
+      "Allows you to traverse through a collection of objects.",
+      "Already abstracted in most languages through for loops."
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "fundamentals",
     "id": "18"
-  }, {
+  },
+  {
     "title": "Observer",
     "subject": "Design Patterns",
-    "definition": ["Push-based system.", "Allows many objects to subscribe to events that are broadcast by another object."],
+    "definition": [
+      "Push-based system.",
+      "Allows many objects to subscribe to events that are broadcast by another object."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "19"
-  }, {
+  },
+  {
     "title": "Mediator",
     "subject": "Design Patterns",
-    "definition": ["Middleman/Broker."],
+    "definition": [
+      "Middleman/Broker."
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "fundamentals",
     "id": "20"
-  }, {
+  },
+  {
     "title": "State",
     "subject": "Design Patterns",
-    "definition": ["Object behaves differently based on the state/data of an application."],
+    "definition": [
+      "Object behaves differently based on the state/data of an application."
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "fundamentals",
     "id": "21"
-  }, {
-    "title": "Dev Environment",
-    "subject": "Dev Environments",
-    "definition": ["Where developers write and modify code.", "Controlled environment where devs create and test individual code modules.", "Unit testing takes place here."],
-    "hint": "",
-    "knowledgeLevel": "4",
-    "meta": "",
-    "id": "22"
-  }, {
-    "title": "Uat Environment",
-    "subject": "Dev Environments",
-    "definition": ["Testing is performed by end user or customer where they use their own environment.", "Final testing phase before deployment.", "Focused on real world scenarios."],
+  },
+  {
+    "title": "REST",
+    "subject": "Rest vs GraphQL",
+    "definition": [
+      "Tells you everything they know, whether you request it or not.",
+      "Architectural style that relies on HTTP requests to interact with resources.",
+      "Each resource has a unique identifier called a URI.",
+      "GET PUT POST DELETE.",
+      "Responds in JSON or XML."
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
-    "id": "23"
-  }, {
-    "title": "Pre-Prod Environment",
-    "subject": "Dev Environments",
-    "definition": ["Controlled and closely replicates setup that simulates the prod environment.", "Main goal is to test in an environment as close as possible to prod."],
+    "category": "frontend",
+    "id": "31"
+  },
+  {
+    "title": "GraphQL",
+    "subject": "Rest vs GraphQL",
+    "definition": [
+      "Tells you what is necessary.",
+      "Returns exactly what is requested.",
+      "Query language that allows clients to retrieve data from multiple data sources in a single API call.",
+      "Uses schemas to query.",
+      "Uses a resolver to retrieve the data requested in the query.",
+      "Mutations are used to modify the data on the server.",
+      "Protocol agnostic.",
+      "Can use a single API endpoint that allows the client to query all of the data in a single request using a query."
+    ],
     "hint": "",
-    "knowledgeLevel": "4",
+    "knowledgeLevel": "3",
     "meta": "",
-    "id": "24"
-  }, {
-    "title": "Prod Environment",
-    "subject": "Dev Environments",
-    "definition": ["The live environment where software is accessed by end users.", "Monitoring and maintenance is essential in prod."],
+    "category": "frontend",
+    "id": "32"
+  },
+  {
+    "title": "How are they similar",
+    "subject": "Rest vr GraphQL",
+    "definition": [
+      "Both are used to build APIs.",
+      "Both use frameworks and libraries to handle network details.",
+      "Both operate over HTTP.",
+      "Both can handle requests and responses using JSON."
+    ],
     "hint": "",
-    "knowledgeLevel": "4",
+    "knowledgeLevel": "1",
     "meta": "",
-    "id": "25"
-  }, {
+    "category": "frontend",
+    "id": "33"
+  },
+  {
+    "title": "ES6 Features",
+    "subject": "ES6 Features",
+    "definition": [
+      "let, const, arrow functions, spread (...), for of, classes, promises, string.includes(), array.from(), array.find(), array.findIndex(), number.inInteger(), isNaN(), destructuring, rest operator, async/await."
+    ],
+    "hint": "",
+    "knowledgeLevel": "2",
+    "meta": "",
+    "category": "frontend",
+    "id": "50"
+  },
+  {
+    "title": "What is Redux / Key Concepts",
+    "subject": "Redux",
+    "definition": [
+      "Redux is an open-source JavaScript library for managing and centralizing application state.",
+      "Store, Actions, Reducers, Dispatch, Selectors"
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "53"
+  },
+  {
+    "title": "Store",
+    "subject": "Redux",
+    "definition": [
+      "The single source of truth that holds the state of your application.",
+      "A globalized state of your application."
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "frontend",
+    "id": "54"
+  },
+  {
+    "title": "Actions",
+    "subject": "Redux",
+    "definition": [
+      "Javascript objects that represent an intention to change the state.",
+      "Describes what you want to do. Function that returns an object."
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "frontend",
+    "id": "55"
+  },
+  {
+    "title": "Reducers",
+    "subject": "Redux",
+    "definition": [
+      "Functions that take the current state and an action, and returns a new state.",
+      "Describes how your actions transform your state into a new state."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "56"
+  },
+  {
+    "title": "Dispatch",
+    "subject": "Redux",
+    "definition": [
+      "A function to send actions to the store.",
+      "Way to execute an action."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "57"
+  },
+  {
+    "title": "Selectors",
+    "subject": "Redux",
+    "definition": [
+      "Functions that extract and derive specific pieces of data from the store."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "58"
+  },
+  {
+    "title": "What is the DOM",
+    "subject": "DOM",
+    "definition": [
+      "Document Object Model",
+      "Works like a tree"
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "frontend",
+    "id": "59"
+  },
+  {
+    "title": "DOM Manipulation Techniques",
+    "subject": "DOM",
+    "definition": [
+      "getElementById, createElement, classList.add/remove, addEventListener, this, fetching data, innerHTML, toggle, innerWidth"
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "frontend",
+    "id": "60"
+  },
+  {
+    "title": "What is the DOM",
+    "subject": "DOM",
+    "definition": [
+      "Document Object Model is a programming interface for web documents.",
+      "Represented as nodes and objects: works like a tree.",
+      "Represents the page so that programs can change the document structure, style, and content.",
+      "Independent of any programming language, but JavaScript is the most common used to access the DOM API"
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "61"
+  },
+  {
+    "title": "How to add an element to another element",
+    "subject": "DOM",
+    "definition": [
+      "append(element)",
+      "Can append strings or other elements to an existing element."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "62"
+  },
+  {
+    "title": "How to create an element",
+    "subject": "DOM",
+    "definition": [
+      "document.createElement('div')",
+      "Way to create any element. Replace div with whatever. Can be appended with append()."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "63"
+  },
+  {
+    "title": "How to get just the text in an element",
+    "subject": "DOM",
+    "definition": [
+      "innerText",
+      "Just the text that is within."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "64"
+  },
+  {
+    "title": "How to get ALL text in an element",
+    "subject": "DOM",
+    "definition": [
+      "textContent",
+      "Shows all text with spacing and styling, even when hidden."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "65"
+  },
+  {
+    "title": "How to assign html to an element",
+    "subject": "DOM",
+    "definition": [
+      "innerHTML",
+      "Way to assign html through javascript. Not safe because users may be able to insert their own html."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "66"
+  },
+  {
+    "title": "How to select specific elements",
+    "subject": "DOM",
+    "definition": [
+      "document.getElementById(id)",
+      "document.querySelector('#elementId')",
+      "example: document.querySelectorAll('div')"
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "67"
+  },
+  {
+    "title": "How to delete an element",
+    "subject": "DOM",
+    "definition": [
+      "element.remove()",
+      "Completely remove an element from DOM."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "68"
+  },
+  {
+    "title": "Methods to deal with attributes",
+    "subject": "DOM",
+    "definition": [
+      "element.getAttribute(attribute)",
+      "element.setAttribute(attribute)",
+      "element.removeAttribute(attribute)"
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "69"
+  },
+  {
+    "title": "How to modify classes of an element",
+    "subject": "DOM",
+    "definition": [
+      "classList.add(class)",
+      "classList.remove(class)"
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "70"
+  },
+  {
+    "title": "How to toggle classes of an element",
+    "subject": "DOM",
+    "definition": [
+      "classList.toggle(class)",
+      "classList.toggle(class, boolean)",
+      "Will remove if existing and add if not. Also can do classList.gottle(class, boolean) to only add or remove class."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "71"
+  },
+  {
+    "title": "header",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Usually where nav and logo goes."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "72"
+  },
+  {
+    "title": "main",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Consists of sections. Contains stuff like h1, p, sidebar (aside), article, etc. Only 1 main per page."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "73"
+  },
+  {
+    "title": "section",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Contains stuff that is related to each other on screen."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "74"
+  },
+  {
+    "title": "article",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Standalone content that can be placed anywhere and have the same meaning."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "75"
+  },
+  {
+    "title": "footer",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Uses anchors like header, but not nav links. If important, doesn't go in footer."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "76"
+  },
+  {
+    "title": "head",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Contains meta data of the website. Stuff you don't see."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "77"
+  },
+  {
+    "title": "!DOCTYPE",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Tells the browser this is an HTML document and this is HTML5."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "78"
+  },
+  {
+    "title": "title",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Goes in head. Shows up on search results and in tab."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "79"
+  },
+  {
+    "title": "style",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Where you put css or link to your stylesheet using link."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "80"
+  },
+  {
+    "title": "ul / ol",
+    "subject": "HTML Element Tags",
+    "definition": [
+      "Unordered and Ordered list."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "81"
+  },
+  {
+    "title": "How to align on x-axis",
+    "subject": "Flex Box",
+    "definition": [
+      "justify-content",
+      "Aligns content on x-axis."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "82"
+  },
+  {
+    "title": "How to align on y-axis",
+    "subject": "Flex Box",
+    "definition": [
+      "align-items",
+      "Aligns content on y-axis."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "83"
+  },
+  {
+    "title": "How to set flex direction and wrap",
+    "subject": "Flex Box",
+    "definition": [
+      "flex-flow",
+      "Determines the flex direction and flex-wrap."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "84"
+  },
+  {
+    "title": "How to allow children to wrap",
+    "subject": "Flex Box",
+    "definition": [
+      "flex-wrap",
+      "Can be set to allow children to wrap if needed. Unlocks align-content."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "85"
+  },
+  {
+    "title": "How to allow wrapping content to be aligned",
+    "subject": "Flex Box",
+    "definition": [
+      "align-content",
+      "Allows wrapping content to be aligned around content axis."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "86"
+  },
+  {
+    "title": "How to add spacing between children",
+    "subject": "Flex Box",
+    "definition": [
+      "gap",
+      "Adds a gap between children."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "87"
+  },
+  {
+    "title": "How to allow children to take up remaining space",
+    "subject": "Flex Box",
+    "definition": [
+      "flex-grow",
+      "Can be assigned to individual children. They will take up the remaining space if set to 1."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "88"
+  },
+  {
+    "title": "How to control how fast a child shrinks",
+    "subject": "Flex Box",
+    "definition": [
+      "flex-shrink",
+      "Can be assigned to individual children. Controls how fast this item shrinks compared to others. Set with number value. If set to 0, it will not shrink."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "89"
+  },
+  {
+    "title": "How to override width of child",
+    "subject": "Flex Box",
+    "definition": [
+      "flex-basis",
+      "Overrides width of a child."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "90"
+  },
+  {
+    "title": "What is the shorthand for the last 3 questions",
+    "subject": "Flex Box",
+    "definition": [
+      "flex",
+      "Shorthand for grow, shrink, and basis."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "91"
+  },
+  {
+    "title": "How to override parent alignment",
+    "subject": "Flex Box",
+    "definition": [
+      "align-self",
+      "Overrides parent align for an individual item."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "92"
+  },
+  {
+    "title": "How to override the order of a child",
+    "subject": "Flex Box",
+    "definition": [
+      "order",
+      "Overrides where this element will appear in flex order."
+    ],
+    "hint": "",
+    "knowledgeLevel": "1",
+    "meta": "",
+    "category": "frontend",
+    "id": "93"
+  },
+  {
     "title": "Bubble Sort",
     "subject": "Sorting Algorithms",
-    "definition": ["O(n^2)", "Compare consecutive items, if they are out of place, we swap them.", "A sorted partition is formed at the end of the array."],
+    "definition": [
+      "O(n^2)",
+      "Compare consecutive items, if they are out of place, we swap them.",
+      "A sorted partition is formed at the end of the array."
+    ],
     "hint": "",
     "knowledgeLevel": "5",
     "meta": "",
+    "category": "dsa",
     "id": "26"
-  }, {
+  },
+  {
     "title": "Selection Sort",
     "subject": "Sorting Algorithms",
-    "definition": ["O(n^2)", "Select the current minimum and loop through array looking for a smaller item, then swap.", "Set the next item as the current minimum and repeat."],
+    "definition": [
+      "O(n^2)",
+      "Select the current minimum and loop through array looking for a smaller item, then swap.",
+      "Set the next item as the current minimum and repeat."
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "dsa",
     "id": "27"
-  }, {
+  },
+  {
     "title": "Insertion Sort",
     "subject": "Sorting Algorithms",
-    "definition": ["O(n^2)", "Start from left and move right through array.", "If item on left is larger, swap and the check the next item to the left until the item is in the correct location."],
+    "definition": [
+      "O(n^2)",
+      "Start from left and move right through array.",
+      "If item on left is larger, swap and the check the next item to the left until the item is in the correct location."
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "dsa",
     "id": "28"
-  }, {
+  },
+  {
     "title": "Merge Sort",
     "subject": "Sorting Algorithms",
-    "definition": ["O(nlogn)", "Recursive, divide-and-conquer.", "Split array into halves until you are left with individual items.", "Examine each item and merge them into temporary arrays in order.", "Merge the arrays into new arrays in the correct order.", "Continue until the arrays are sorted"],
+    "definition": [
+      "O(nlogn)",
+      "Recursive, divide-and-conquer.",
+      "Split array into halves until you are left with individual items.",
+      "Examine each item and merge them into temporary arrays in order.",
+      "Merge the arrays into new arrays in the correct order.",
+      "Continue until the arrays are sorted"
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "dsa",
     "id": "29"
-  }, {
+  },
+  {
     "title": "Quick Sort",
     "subject": "Sorting Algorithms",
-    "definition": ["O(n^2) - O(nlogn)", "Recursive, pivot.", "Pivot must be in the correct position in final, sorted array.", "This means all items to the left are smaller and to the right are larger.", "First, select a pivot and move it to the end of the array.", "Then, find 2 items: the first item that is smaller than the pivot from the right side and the first that it larger than the pivot from the left side.", "Then swap both items.", "Stop when the indices overlap when looking for a new item and swap item from left (larger).", "Then swap item from left with pivot.", "Check if pivot meets pivot condition.", "Now perform these steps on right and left sides.", "Note: pick pivot based on median of threes."],
+    "definition": [
+      "O(n^2) - O(nlogn)",
+      "Recursive, pivot.",
+      "Pivot must be in the correct position in final, sorted array.",
+      "This means all items to the left are smaller and to the right are larger.",
+      "First, select a pivot and move it to the end of the array.",
+      "Then, find 2 items: the first item that is smaller than the pivot from the right side and the first that it larger than the pivot from the left side.",
+      "Then swap both items.",
+      "Stop when the indices overlap when looking for a new item and swap item from left (larger).",
+      "Then swap item from left with pivot.",
+      "Check if pivot meets pivot condition.",
+      "Now perform these steps on right and left sides.",
+      "Note: pick pivot based on median of threes."
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "dsa",
     "id": "30"
-  }, {
-    "title": "REST",
-    "subject": "Rest vs GraphQL",
-    "definition": ["Tells you everything they know, whether you request it or not.", "Architectural style that relies on HTTP requests to interact with resources.", "Each resource has a unique identifier called a URI.", "GET PUT POST DELETE.", "Responds in JSON or XML."],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "31"
-  }, {
-    "title": "GraphQL",
-    "subject": "Rest vs GraphQL",
-    "definition": ["Tells you what is necessary.", "Returns exactly what is requested.", "Query language that allows clients to retrieve data from multiple data sources in a single API call.", "Uses schemas to query.", "Uses a resolver to retrieve the data requested in the query.", "Mutations are used to modify the data on the server.", "Protocol agnostic.", "Can use a single API endpoint that allows the client to query all of the data in a single request using a query."],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "32"
-  }, {
-    "title": "How are they similar",
-    "subject": "Rest vr GraphQL",
-    "definition": ["Both are used to build APIs.", "Both use frameworks and libraries to handle network details.", "Both operate over HTTP.", "Both can handle requests and responses using JSON."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "33"
-  }, {
-    "title": "Coupling",
-    "subject": "Coupling and Cohesion",
-    "definition": ["How much two parts of our system depend on each other.", "We want to aim for as loose coupling as possible.", "Steps to decrease coupling: favor interfaces and composition over inheritance.", "Avoid method call chains.\"Tell, don't ask.\" Utilize events."],
-    "hint": "",
-    "knowledgeLevel": "4",
-    "meta": "",
-    "id": "34"
-  }, {
-    "title": "Cohesion",
-    "subject": "Coupling and Cohesion",
-    "definition": ["How the internals of one class work together.", "We want to aim for as high cohesion as possible.", "Steps for increasing cohesion: Naming functionalities/classes with specific terms.", "Group by feature/behavior."],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "35"
-  }, {
-    "title": "Black Box",
-    "subject": "Types of Testing (Box)",
-    "definition": ["No knowledge of client network and apps, but it emulates real-world threats and is performed by independent team.", "Pros: Fast, simplistic.", "Cons: Not comprehensive."],
-    "hint": "",
-    "knowledgeLevel": "4",
-    "meta": "",
-    "id": "36"
-  }, {
-    "title": "Grey Box",
-    "subject": "Types of Testing (Box)",
-    "definition": ["A combination of black and white box testing where you have some knowledge of internal systems.", "Pros: Jack of all trades.", "Cons: Master of none."],
-    "hint": "",
-    "knowledgeLevel": "4",
-    "meta": "",
-    "id": "37"
-  }, {
-    "title": "White Box",
-    "subject": "Types of Testing (Box)",
-    "definition": ["You have full knowledge of client network and apps.", "including code, network diagrams, and system access.", "Pros: Comprehensive, no limits to the bugs you can find, preventative.", "Cons: Easy to accidentally look over simple bugs."],
-    "hint": "",
-    "knowledgeLevel": "4",
-    "meta": "",
-    "id": "38"
-  }, {
-    "title": "Git Flow",
-    "subject": "Branching Strategies",
-    "definition": ["Characterized by two main branches: Master and Dev. Long lived branches and larger commits. Master branch represents the official project history. Dev branch serves as an integration branch for features. Can have additional branches such as feature, release, and hotfix. Advantages include structure and parallel development suitable for larger teams where features need to be developed separately before merging."],
-    "hint": "",
-    "knowledgeLevel": "2",
-    "meta": "",
-    "id": "39"
-  }, {
-    "title": "Trunk Based",
-    "subject": "Branching Strategies",
-    "definition": ["Short lived branches with fewer commits. Developers create feature branches for each new feature and merge back into main branch. All developers work on the main branch. Advantages includes reduced merge conflicts and accelerated delivery. Works best in continous development environments."],
-    "hint": "",
-    "knowledgeLevel": "2",
-    "meta": "",
-    "id": "40"
-  }, {
+  },
+  {
     "title": "Array",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(1), Search = O(n), Insertion = O(n), Deletion = O(n)"],
+    "definition": [
+      "Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)",
+      "Worst: Access = O(1), Search = O(n), Insertion = O(n), Deletion = O(n)"
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "dsa",
     "id": "41"
-  }, {
+  },
+  {
     "title": "Stack",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"],
+    "definition": [
+      "Best: O(1), Search = O(1), Insertion = O(1), Deletion = O(1)",
+      "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "dsa",
     "id": "42"
-  }, {
+  },
+  {
     "title": "Queue",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"],
+    "definition": [
+      "Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)",
+      "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"
+    ],
     "hint": "",
     "knowledgeLevel": "3",
     "meta": "",
+    "category": "dsa",
     "id": "43"
-  }, {
+  },
+  {
     "title": "Hash Table",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: Access = N/A, Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = N/A, Search = O(n), Insertion = O(n), Deletion = O(n)"],
+    "definition": [
+      "Best: Access = N/A, Search = O(1), Insertion = O(1), Deletion = O(1)",
+      "Worst: Access = N/A, Search = O(n), Insertion = O(n), Deletion = O(n)"
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "dsa",
     "id": "44"
-  }, {
+  },
+  {
     "title": "Singly-Linked List",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"],
+    "definition": [
+      "Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)",
+      "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "dsa",
     "id": "45"
-  }, {
+  },
+  {
     "title": "Doubly-Linked List",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)", "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"],
+    "definition": [
+      "Best: Access = O(1), Search = O(1), Insertion = O(1), Deletion = O(1)",
+      "Worst: Access = O(n), Search = O(n), Insertion = O(1), Deletion = O(1)"
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
+    "category": "dsa",
     "id": "46"
-  }, {
+  },
+  {
     "title": "Binary Search Tree/Binary Tree",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)", "Worst: Access = O(n), Search = O(n), Insertion = O(n), Deletion = O(n)"],
+    "definition": [
+      "Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)",
+      "Worst: Access = O(n), Search = O(n), Insertion = O(n), Deletion = O(n)"
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "dsa",
     "id": "47"
-  }, {
+  },
+  {
     "title": "AVL Tree",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)", "Worst: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)"],
+    "definition": [
+      "Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)",
+      "Worst: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)"
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "dsa",
     "id": "48"
-  }, {
+  },
+  {
     "title": "Red Black Tree",
     "subject": "Data Structure Time Complexities",
-    "definition": ["Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)", "Worst: Access = O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)"],
+    "definition": [
+      "Best: O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)",
+      "Worst: Access = O(logn), Search = O(logn), Insertion = O(logn), Deletion = O(logn)"
+    ],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
+    "category": "dsa",
     "id": "49"
-  }, {
-    "title": "ES6 Features",
-    "subject": "ES6 Features",
-    "definition": ["let, const, arrow functions, spread (...), for of, classes, promises, string.includes(), array.from(), array.find(), array.findIndex(), number.inInteger(), isNaN(), destructuring, rest operator, async/await."],
+  },
+  {
+    "title": "BFS",
+    "subject": "Graph Traversal",
+    "definition": [
+      "Queue (FIFO)",
+      "Time Complexity: O(|V| + |E|)",
+      "Expands horizontally before vertically.",
+      "Algorithm: Use 2 arrays, 1 to track visited nodes and 1 to track the queue. Add the root node to the queue. While the queue isn't empty, pop(), then add all non-visited, adjacent nodes of the popped node to the queue and visited arrays. End when target node is found."
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "dsa",
+    "id": "51"
+  },
+  {
+    "title": "DFS",
+    "subject": "Graph Traversal",
+    "definition": [
+      "Stack (LIFO)",
+      "Time Complexity: O(|V| + |E|)",
+      "Expands vertically before horizontally.",
+      "Algorithm: Use 2 arrays, 1 to track visited nodes and 1 to track the queue. Add the root node to the stack. While the stack isn't empty, pop(), then add all non-visited, adjacent nodes of the popped node to the queue and visited arrays. End when target node is found."
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "dsa",
+    "id": "52"
+  },
+  {
+    "title": "Dev Environment",
+    "subject": "Dev Environments",
+    "definition": [
+      "Where developers write and modify code.",
+      "Controlled environment where devs create and test individual code modules.",
+      "Unit testing takes place here."
+    ],
+    "hint": "",
+    "knowledgeLevel": "4",
+    "meta": "",
+    "category": "general",
+    "id": "22"
+  },
+  {
+    "title": "Uat Environment",
+    "subject": "Dev Environments",
+    "definition": [
+      "Testing is performed by end user or customer where they use their own environment.",
+      "Final testing phase before deployment.",
+      "Focused on real world scenarios."
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "general",
+    "id": "23"
+  },
+  {
+    "title": "Pre-Prod Environment",
+    "subject": "Dev Environments",
+    "definition": [
+      "Controlled and closely replicates setup that simulates the prod environment.",
+      "Main goal is to test in an environment as close as possible to prod."
+    ],
+    "hint": "",
+    "knowledgeLevel": "4",
+    "meta": "",
+    "category": "general",
+    "id": "24"
+  },
+  {
+    "title": "Prod Environment",
+    "subject": "Dev Environments",
+    "definition": [
+      "The live environment where software is accessed by end users.",
+      "Monitoring and maintenance is essential in prod."
+    ],
+    "hint": "",
+    "knowledgeLevel": "4",
+    "meta": "",
+    "category": "general",
+    "id": "25"
+  },
+  {
+    "title": "Coupling",
+    "subject": "Coupling and Cohesion",
+    "definition": [
+      "How much two parts of our system depend on each other.",
+      "We want to aim for as loose coupling as possible.",
+      "Steps to decrease coupling: favor interfaces and composition over inheritance.",
+      "Avoid method call chains.\"Tell, don't ask.\" Utilize events."
+    ],
+    "hint": "",
+    "knowledgeLevel": "4",
+    "meta": "",
+    "category": "general",
+    "id": "34"
+  },
+  {
+    "title": "Cohesion",
+    "subject": "Coupling and Cohesion",
+    "definition": [
+      "How the internals of one class work together.",
+      "We want to aim for as high cohesion as possible.",
+      "Steps for increasing cohesion: Naming functionalities/classes with specific terms.",
+      "Group by feature/behavior."
+    ],
+    "hint": "",
+    "knowledgeLevel": "3",
+    "meta": "",
+    "category": "general",
+    "id": "35"
+  },
+  {
+    "title": "Black Box",
+    "subject": "Types of Testing (Box)",
+    "definition": [
+      "No knowledge of client network and apps, but it emulates real-world threats and is performed by independent team.",
+      "Pros: Fast, simplistic.",
+      "Cons: Not comprehensive."
+    ],
+    "hint": "",
+    "knowledgeLevel": "4",
+    "meta": "",
+    "category": "general",
+    "id": "36"
+  },
+  {
+    "title": "Grey Box",
+    "subject": "Types of Testing (Box)",
+    "definition": [
+      "A combination of black and white box testing where you have some knowledge of internal systems.",
+      "Pros: Jack of all trades.",
+      "Cons: Master of none."
+    ],
+    "hint": "",
+    "knowledgeLevel": "4",
+    "meta": "",
+    "category": "general",
+    "id": "37"
+  },
+  {
+    "title": "White Box",
+    "subject": "Types of Testing (Box)",
+    "definition": [
+      "You have full knowledge of client network and apps.",
+      "including code, network diagrams, and system access.",
+      "Pros: Comprehensive, no limits to the bugs you can find, preventative.",
+      "Cons: Easy to accidentally look over simple bugs."
+    ],
+    "hint": "",
+    "knowledgeLevel": "4",
+    "meta": "",
+    "category": "general",
+    "id": "38"
+  },
+  {
+    "title": "Git Flow",
+    "subject": "Branching Strategies",
+    "definition": [
+      "Characterized by two main branches: Master and Dev. Long lived branches and larger commits. Master branch represents the official project history. Dev branch serves as an integration branch for features. Can have additional branches such as feature, release, and hotfix. Advantages include structure and parallel development suitable for larger teams where features need to be developed separately before merging."
+    ],
     "hint": "",
     "knowledgeLevel": "2",
     "meta": "",
-    "id": "50"
-  }, {
-    "title": "BFS",
-    "subject": "Graph Traversal",
-    "definition": ["Queue (FIFO)", "Time Complexity: O(|V| + |E|)", "Expands horizontally before vertically.", "Algorithm: Use 2 arrays, 1 to track visited nodes and 1 to track the queue. Add the root node to the queue. While the queue isn't empty, pop(), then add all non-visited, adjacent nodes of the popped node to the queue and visited arrays. End when target node is found."],
+    "category": "general",
+    "id": "39"
+  },
+  {
+    "title": "Trunk Based",
+    "subject": "Branching Strategies",
+    "definition": [
+      "Short lived branches with fewer commits. Developers create feature branches for each new feature and merge back into main branch. All developers work on the main branch. Advantages includes reduced merge conflicts and accelerated delivery. Works best in continous development environments."
+    ],
     "hint": "",
-    "knowledgeLevel": "3",
+    "knowledgeLevel": "2",
     "meta": "",
-    "id": "51"
-  }, {
-    "title": "DFS",
-    "subject": "Graph Traversal",
-    "definition": ["Stack (LIFO)", "Time Complexity: O(|V| + |E|)", "Expands vertically before horizontally.", "Algorithm: Use 2 arrays, 1 to track visited nodes and 1 to track the queue. Add the root node to the stack. While the stack isn't empty, pop(), then add all non-visited, adjacent nodes of the popped node to the queue and visited arrays. End when target node is found."],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "52"
-  }, {
-    "title": "What is Redux / Key Concepts",
-    "subject": "Redux",
-    "definition": ["Redux is an open-source JavaScript library for managing and centralizing application state.", "Store, Actions, Reducers, Dispatch, Selectors"],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "53"
-  }, {
-    "title": "Store",
-    "subject": "Redux",
-    "definition": ["The single source of truth that holds the state of your application.", "A globalized state of your application."],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "54"
-  }, {
-    "title": "Actions",
-    "subject": "Redux",
-    "definition": ["Javascript objects that represent an intention to change the state.", "Describes what you want to do. Function that returns an object."],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "55"
-  }, {
-    "title": "Reducers",
-    "subject": "Redux",
-    "definition": ["Functions that take the current state and an action, and returns a new state.", "Describes how your actions transform your state into a new state."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "56"
-  }, {
-    "title": "Dispatch",
-    "subject": "Redux",
-    "definition": ["A function to send actions to the store.", "Way to execute an action."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "57"
-  }, {
-    "title": "Selectors",
-    "subject": "Redux",
-    "definition": ["Functions that extract and derive specific pieces of data from the store."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "58"
-  }, {
-    "title": "What is the DOM",
-    "subject": "DOM",
-    "definition": ["Document Object Model", "Works like a tree"],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "59"
-  }, {
-    "title": "DOM Manipulation Techniques",
-    "subject": "DOM",
-    "definition": ["getElementById, createElement, classList.add/remove, addEventListener, this, fetching data, innerHTML, toggle, innerWidth"],
-    "hint": "",
-    "knowledgeLevel": "3",
-    "meta": "",
-    "id": "60"
-  }, {
-    "title": "What is the DOM",
-    "subject": "DOM",
-    "definition": ["Document Object Model is a programming interface for web documents.", "Represented as nodes and objects: works like a tree.", "Represents the page so that programs can change the document structure, style, and content.", "Independent of any programming language, but JavaScript is the most common used to access the DOM API"],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "61"
-  }, {
-    "title": "How to add an element to another element",
-    "subject": "DOM",
-    "definition": ["append(element)", "Can append strings or other elements to an existing element."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "62"
-  }, {
-    "title": "How to create an element",
-    "subject": "DOM",
-    "definition": ["document.createElement('div')", "Way to create any element. Replace div with whatever. Can be appended with append()."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "63"
-  }, {
-    "title": "How to get just the text in an element",
-    "subject": "DOM",
-    "definition": ["innerText", "Just the text that is within."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "64"
-  }, {
-    "title": "How to get ALL text in an element",
-    "subject": "DOM",
-    "definition": ["textContent", "Shows all text with spacing and styling, even when hidden."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "65"
-  }, {
-    "title": "How to assign html to an element",
-    "subject": "DOM",
-    "definition": ["innerHTML", "Way to assign html through javascript. Not safe because users may be able to insert their own html."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "66"
-  }, {
-    "title": "How to select specific elements",
-    "subject": "DOM",
-    "definition": ["document.getElementById(id)", "document.querySelector('#elementId')", "example: document.querySelectorAll('div')"],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "67"
-  }, {
-    "title": "How to delete an element",
-    "subject": "DOM",
-    "definition": ["element.remove()", "Completely remove an element from DOM."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "68"
-  }, {
-    "title": "Methods to deal with attributes",
-    "subject": "DOM",
-    "definition": ["element.getAttribute(attribute)", "element.setAttribute(attribute)", "element.removeAttribute(attribute)"],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "69"
-  }, {
-    "title": "How to modify classes of an element",
-    "subject": "DOM",
-    "definition": ["classList.add(class)", "classList.remove(class)"],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "70"
-  }, {
-    "title": "How to toggle classes of an element",
-    "subject": "DOM",
-    "definition": ["classList.toggle(class)", "classList.toggle(class, boolean)", "Will remove if existing and add if not. Also can do classList.gottle(class, boolean) to only add or remove class."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "71"
-  }, {
-    "title": "header",
-    "subject": "HTML Element Tags",
-    "definition": ["Usually where nav and logo goes."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "72"
-  }, {
-    "title": "main",
-    "subject": "HTML Element Tags",
-    "definition": ["Consists of sections. Contains stuff like h1, p, sidebar (aside), article, etc. Only 1 main per page."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "73"
-  }, {
-    "title": "section",
-    "subject": "HTML Element Tags",
-    "definition": ["Contains stuff that is related to each other on screen."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "74"
-  }, {
-    "title": "article",
-    "subject": "HTML Element Tags",
-    "definition": ["Standalone content that can be placed anywhere and have the same meaning."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "75"
-  }, {
-    "title": "footer",
-    "subject": "HTML Element Tags",
-    "definition": ["Uses anchors like header, but not nav links. If important, doesn't go in footer."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "76"
-  }, {
-    "title": "head",
-    "subject": "HTML Element Tags",
-    "definition": ["Contains meta data of the website. Stuff you don't see."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "77"
-  }, {
-    "title": "!DOCTYPE",
-    "subject": "HTML Element Tags",
-    "definition": ["Tells the browser this is an HTML document and this is HTML5."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "78"
-  }, {
-    "title": "title",
-    "subject": "HTML Element Tags",
-    "definition": ["Goes in head. Shows up on search results and in tab."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "79"
-  }, {
-    "title": "style",
-    "subject": "HTML Element Tags",
-    "definition": ["Where you put css or link to your stylesheet using link."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "80"
-  }, {
-    "title": "ul / ol",
-    "subject": "HTML Element Tags",
-    "definition": ["Unordered and Ordered list."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "81"
-  }, {
-    "title": "How to align on x-axis",
-    "subject": "Flex Box",
-    "definition": ["justify-content", "Aligns content on x-axis."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "82"
-  }, {
-    "title": "How to align on y-axis",
-    "subject": "Flex Box",
-    "definition": ["align-items", "Aligns content on y-axis."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "83"
-  }, {
-    "title": "How to set flex direction and wrap",
-    "subject": "Flex Box",
-    "definition": ["flex-flow", "Determines the flex direction and flex-wrap."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "84"
-  }, {
-    "title": "How to allow children to wrap",
-    "subject": "Flex Box",
-    "definition": ["flex-wrap", "Can be set to allow children to wrap if needed. Unlocks align-content."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "85"
-  }, {
-    "title": "How to allow wrapping content to be aligned",
-    "subject": "Flex Box",
-    "definition": ["align-content", "Allows wrapping content to be aligned around content axis."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "86"
-  }, {
-    "title": "How to add spacing between children",
-    "subject": "Flex Box",
-    "definition": ["gap", "Adds a gap between children."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "87"
-  }, {
-    "title": "How to allow children to take up remaining space",
-    "subject": "Flex Box",
-    "definition": ["flex-grow", "Can be assigned to individual children. They will take up the remaining space if set to 1."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "88"
-  }, {
-    "title": "How to control how fast a child shrinks",
-    "subject": "Flex Box",
-    "definition": ["flex-shrink", "Can be assigned to individual children. Controls how fast this item shrinks compared to others. Set with number value. If set to 0, it will not shrink."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "89"
-  }, {
-    "title": "How to override width of child",
-    "subject": "Flex Box",
-    "definition": ["flex-basis", "Overrides width of a child."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "90"
-  }, {
-    "title": "What is the shorthand for the last 3 questions",
-    "subject": "Flex Box",
-    "definition": ["flex", "Shorthand for grow, shrink, and basis."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "91"
-  }, {
-    "title": "How to override parent alignment",
-    "subject": "Flex Box",
-    "definition": ["align-self", "Overrides parent align for an individual item."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "92"
-  }, {
-    "title": "How to override the order of a child",
-    "subject": "Flex Box",
-    "definition": ["order", "Overrides where this element will appear in flex order."],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "93"
-  }, {
-    "title": "",
-    "subject": "",
-    "definition": [""],
-    "hint": "",
-    "knowledgeLevel": "1",
-    "meta": "",
-    "id": "94"
+    "category": "general",
+    "id": "40"
   }
 ]

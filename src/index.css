@@ -29,6 +29,9 @@ body {
   height: 64px;
   position: fixed;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer {
@@ -63,7 +66,7 @@ body {
 
   &:hover {
     background-color: rgb(168, 168, 168);
-    transition: background-color .25s ease-in-out;
+    transition: background-color .20s ease-in-out;
   }
 }
 
@@ -133,7 +136,11 @@ body {
 
   &:hover {
     background-color: rgb(76, 132, 236);
-    transition: background-color .25s;
+    border: 2px solid rgb(105, 105, 105);
+    transition: background-color .20s;
+  }
+  &:active {
+    background-color: rgb(68, 117, 209);
   }
 }
 
@@ -142,13 +149,17 @@ body {
   width: 4vw;
   font-size: 24px;
   border-radius: 12px;
-  border: 2px solid gray;
+  border: 2px solid rgb(133, 133, 133);
   color: black;
-  background-color: darkgray;
+  background-color: rgb(168, 168, 168);
 
   &:hover {
     background-color: rgb(128, 127, 127);
-    transition: background-color .25s;
+    border: 2px solid rgb(105, 105, 105);
+    transition: background-color .20s;
+  }
+  &:active {
+    background-color: rgb(99, 99, 99);
   }
 }
 
@@ -197,5 +208,75 @@ body {
   &:hover {
     background-color: rgb(168, 168, 168);
     transition: background-color .1s;
+  }
+}
+
+.sidebar-current-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1vw 0 1vw;
+  padding: 0 4px 0 4px;
+  border-bottom: 1px solid darkgray;
+  border-radius: 4px;
+  background-color: rgb(163, 163, 163);
+  border: 1px solid rgb(112, 112, 112);
+  font-weight: 500;
+
+  &:hover {
+    background-color: rgb(141, 141, 141);
+    transition: background-color .1s;
+  }
+}
+
+.filter-select {
+  appearance: none;
+  min-width: 150px;
+  min-height: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  outline: none;
+  background-color: rgb(206, 204, 204);
+  border: 2px solid rgb(133, 133, 133);
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &:focus {
+    border: 2px solid rgb(100, 100, 100);
+  }
+}
+
+.header-filter-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.header-buttons-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+
+.header-button {
+  height: 3rem;
+  width: 3rem;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 2px solid rgb(80, 80, 80);
+  color: black;
+  background-color: cornflowerblue;
+
+  &:hover {
+    background-color: rgb(76, 132, 236);
+    border: 2px solid rgb(68, 68, 68);
+    transition: background-color .20s;
+  }
+  &:active {
+    background-color: rgb(68, 117, 209);
   }
 }

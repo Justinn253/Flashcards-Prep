@@ -1,7 +1,4 @@
-import { useState } from "react"
-
-
-const SideBar = ({questions, nav}: any) => {
+const SideBar = ({pQuestions, pNav, pCurrentIndex}: any) => {
 
   return(
     <div className='sidebar-container'>
@@ -9,11 +6,11 @@ const SideBar = ({questions, nav}: any) => {
         Table of Contents
       </div>
       <div className='sidebar-content'>
-        {questions.map((item: any) => {
+        {pQuestions.map((item: any, i: number) => {
           return (
-            <div className='sidebar-item' key={item.id} onClick={() => nav(item.id)}>
+            <div className={pCurrentIndex == i ? 'sidebar-current-item' : 'sidebar-item'} key={item.id} onClick={() => pNav(item.id)}>
               <div><b>({item.knowledgeLevel})</b> {item.title}</div> 
-              <div>{item.id}</div>
+              <div>{i + 1}</div>
             </div>
           )
         })}
