@@ -66,8 +66,11 @@ function App() {
   }
 
   return (
-    <div onKeyDown={handleEnter}>
-      <div className="main-container">
+    <>
+      <header className='page-header'>
+        test
+      </header>
+      <main className="main-container">
         <SideBar questions={questions} nav={getNav}></SideBar>
         <div>
           <div className="flash-container" onClick={revealAnswer} tabIndex={0}>
@@ -104,8 +107,11 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </main>
+      <footer className='page-footer'>
+        test
+      </footer>
+    </>
   );
   
 }

@@ -482,7 +482,7 @@
   }, {
     "title": "What is the DOM",
     "subject": "DOM",
-    "definition": ["Document Object Model. Works like a tree."],
+    "definition": ["Document Object Model is a programming interface for web documents.", "Represented as nodes and objects: works like a tree.", "Represents the page so that programs can change the document structure, style, and content.", "Independent of any programming language, but JavaScript is the most common used to access the DOM API"],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",
@@ -530,7 +530,7 @@
   }, {
     "title": "How to select specific elements",
     "subject": "DOM",
-    "definition": ["document.getElementById(id)", "document.querySelector('#elementId')"],
+    "definition": ["document.getElementById(id)", "document.querySelector('#elementId')", "example: document.querySelectorAll('div')"],
     "hint": "",
     "knowledgeLevel": "1",
     "meta": "",

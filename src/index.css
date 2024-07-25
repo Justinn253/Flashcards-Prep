@@ -1,9 +1,6 @@
 body {
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(73, 73, 73);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -27,6 +24,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.page-header {
+  background-color: rgb(48, 48, 48);
+  height: 64px;
+  position: fixed;
+  width: 100%;
+}
+
+.page-footer {
+  background-color: rgb(48, 48, 48);
+  height: 6vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
@@ -34,7 +46,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 85vh;
-  width: 95vw;
+  width: auto;
+  padding: 64px 4vw 0 4vw;
 }
 
 .flash-container {
