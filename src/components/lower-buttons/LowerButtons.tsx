@@ -1,3 +1,5 @@
+import './LowerButtons.css';
+
 const LowerButtons = ({pRevealAnswer, pBack, pNext, pAssignKnowledge}: any) => {
 
   return (

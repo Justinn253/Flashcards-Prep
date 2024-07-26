@@ -1,10 +1,12 @@
 import { ChangeEvent, ChangeEventHandler, KeyboardEvent, useEffect, useState } from 'react';
-import Flashcard from './components/Flashcard';
-import SideBar from './components/SideBar';
-import LowerButtons from './components/LowerButtons';
+import Flashcard from './components/flashcard/Flashcard';
+import SideBar from './components/sidebar/SideBar';
+import LowerButtons from './components/lower-buttons/LowerButtons';
 import dataSet from './assets/flashcards.json';
 import iFlashcard from './interfaces/iFlashcard';
-import { BsShuffle } from 'react-icons/bs'
+import { BsShuffle } from 'react-icons/bs';
+
+
 function App() {
   const [questions, setQuestions] = useState<iFlashcard[]>([new iFlashcard]);
   const [currentQuestion, setCurrentQuestion] = useState<iFlashcard>(questions[0]);
@@ -157,6 +159,7 @@ function App() {
         </section>
         <section className='header-buttons-section' id='header-buttons-section'>
           <button className='header-button' onClick={randomizeQuestions} title='Randomize Questions'><BsShuffle size = '24'/></button>
+          <button className='card'>Style Tester</button>
         </section>
         
       </header>

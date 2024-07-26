@@ -1,3 +1,5 @@
+import './SideBar.css';
+
 const SideBar = ({pQuestions, pNav, pCurrentIndex}: any) => {
 
   return(

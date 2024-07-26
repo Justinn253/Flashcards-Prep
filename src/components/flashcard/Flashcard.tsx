@@ -1,3 +1,5 @@
+import './Flashcard.css';
+
 const Flashcard = ({pQuestions, pCurrentIndex, pCurrentQuestion, pFlipped, pRevealAnswer}: any) => {
 
   return (

@@ -1,0 +1,70 @@
+.lower-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 61vw;
+  margin-top: 4vh;
+  padding: 0 1em 0 1em;
+  background-color: rgb(206, 204, 204);
+  border: 2px solid gray;
+  border-radius: 1em;  
+}
+
+.ratings-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 35vw;
+  gap: 2em;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 25vw;
+  gap: 2em;
+}
+
+.action-button {
+  height: 6vh;
+  width: 8vw;
+  background-color: var(--action-buttons-color);
+  border: 2px solid var(--action-buttons-color-border);
+  border-radius: 12px;
+  color: black;
+  font-size: 18px;
+  transition: background 200ms, border 200ms;
+
+  &:hover {
+    background-color: var(--action-buttons-color-hover);
+    border: 2px solid var(--action-buttons-color-border-hover);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--action-buttons-color-click);
+    border: 2px solid var(--action-buttons-color-border-click);
+  }
+}
+
+.rating-button {
+  height: 6vh;
+  width: 4vw;
+  background-color: var(--secondary-buttons-color);
+  border: 2px solid var(--secondary-buttons-color-border);
+  border-radius: 12px;
+  color: black;
+  font-size: 24px;
+  transition: background 200ms, border 200ms;
+
+  &:hover {
+    background-color: var(--secondary-buttons-color-hover);
+    border: 2px solid var(--secondary-buttons-color-border-hover);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--secondary-buttons-color-click);;
+    border: 2px solid var(--secondary-buttons-color-border-click);
+  }
+}
