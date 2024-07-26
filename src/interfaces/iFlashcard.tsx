@@ -13,7 +13,7 @@ class iFlashcard {
     this.subject = '';
     this.definition = [];
     this.hint = '';
-    this.knowledgeLevel = '';
+    this.knowledgeLevel = '1';
     this.meta = '';
     this.category = '';
     this.id = '';

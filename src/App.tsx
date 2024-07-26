@@ -4,8 +4,7 @@ import SideBar from './components/SideBar';
 import LowerButtons from './components/LowerButtons';
 import dataSet from './assets/flashcards.json';
 import iFlashcard from './interfaces/iFlashcard';
-import iCategory from './interfaces/iCategory';
-
+import { BsShuffle } from 'react-icons/bs'
 function App() {
   const [questions, setQuestions] = useState<iFlashcard[]>([new iFlashcard]);
   const [currentQuestion, setCurrentQuestion] = useState<iFlashcard>(questions[0]);
@@ -117,7 +116,12 @@ function App() {
     setQuestions(filterRes);
   }
 
+  /**
+   * Method to randomize the filtered list of questions
+   * @updates currentIndex, questions, currentQuestion
+   */
   const randomizeQuestions = () => {
+    setCurrentIndex(0)
     const temp = questions;
     let i = temp.length;
 
@@ -127,7 +131,9 @@ function App() {
 
       [temp[i], temp[j]] = [temp[j], temp[i]];
     }
-    setQuestions(temp);
+    setQuestions(() => ([...temp]));
+    setCurrentQuestion(questions[0]);
+    
   }
 
   return (
@@ -150,7 +156,7 @@ function App() {
           </select>
         </section>
         <section className='header-buttons-section' id='header-buttons-section'>
-          <button className='header-button'>R</button>
+          <button className='header-button' onClick={randomizeQuestions} title='Randomize Questions'><BsShuffle size = '24'/></button>
         </section>
         
       </header>
