@@ -2,17 +2,17 @@
   --max-width: 1100px;
   --border-radius: 12px;
 
-  --font-color: rgb(26, 26, 26);
+  --font-color: rgba(26, 26, 26, 1);
 
-  --background-color: rgb(73, 73, 73);
-  --header-color: rgb(48, 48, 48);
+  --background-color: rgb(16, 22, 46);
+  --header-color: rgba(48, 48, 48, 1);
 
-  --component-color: rgb(200, 200, 200);
-  --component-color-border: rgb(160, 160, 160);
-  --component-color-hover: rgb(175, 175, 175);
-  --component-color-border-hover: rgb(135, 135, 135);
-  --component-color-click: rgb(150, 150, 150);
-  --component-color-border-click: rgb(110, 110, 110);
+  --component-color: rgba(200, 200, 200, 1);
+  --component-color-border: rgba(160, 160, 160, 1);
+  --component-color-hover: rgba(175, 175, 175, 1);
+  --component-color-border-hover: rgba(135, 135, 135, 1);
+  --component-color-click: rgba(150, 150, 150, 1);
+  --component-color-border-click: rgba(110, 110, 110, 1);
 
   --sidebar-item-color: var(--component-color);
   --sidebar-item-color-hover: var(--component-color-hover);
@@ -21,71 +21,35 @@
   --sidebar-current-item-color: var(--component-color-click);
   --sidebar-current-item-color-border: var(--component-color-border-click);
 
-  --action-buttons-color: rgb(100, 150, 240);
-  --action-buttons-color-border: rgb(80, 130, 220);
-  --action-buttons-color-hover: rgb(80, 130, 220);
-  --action-buttons-color-border-hover: rgb(60, 110, 200);
-  --action-buttons-color-click: rgb(60, 110, 200);
-  --action-buttons-color-border-click: rgb(40, 90, 180);
+  --action-buttons-color: rgba(100, 150, 240, 1);
+  --action-buttons-color-border: rgba(80, 130, 220, 1);
+  --action-buttons-color-hover: rgba(80, 130, 220, 1);
+  --action-buttons-color-border-hover: rgba(60, 110, 200, 1);
+  --action-buttons-color-click: rgba(60, 110, 200, 1);
+  --action-buttons-color-border-click: rgba(40, 90, 180, 1);
 
   --secondary-buttons-color: var(--component-color-hover);
   --secondary-buttons-color-border: var(--component-color-border-hover);
   --secondary-buttons-color-hover: var(--component-color-click);
   --secondary-buttons-color-border-hover: var(--component-color-border-click);
-  --secondary-buttons-color-click: rgb(125, 125, 125);
-  --secondary-buttons-color-border-click: rgb(85, 85, 85);
+  --secondary-buttons-color-click: rgba(125, 125, 125, 1);
+  --secondary-buttons-color-border-click: rgba(85, 85, 85, 1);
 
   --card-rgb: 100, 100, 100;
   --card-border-rgb: 200, 200, 200;
   
+  
+  --component-color-2: rgba(200, 200, 200, 0);
   --tester: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --font-color: rgb(26, 26, 26);
-
-    --background-color: rgb(73, 73, 73);
-    --header-color: rgb(48, 48, 48);
-  
-    --component-color: rgb(200, 200, 200);
-    --component-color-border: rgb(160, 160, 160);
-    --component-color-hover: rgb(175, 175, 175);
-    --component-color-border-hover: rgb(135, 135, 135);
-    --component-color-click: rgb(150, 150, 150);
-    --component-color-border-click: rgb(110, 110, 110);
-
-    --sidebar-item-color: var(--component-color);
-    --sidebar-item-color-hover: var(--component-color-hover);
-    --sidebar-item-color-click: var(--component-color-click);
-  
-    --sidebar-current-item-color: var(--component-color-click);
-    --sidebar-current-item-color-border: var(--component-color-border-click);
-  
-    --action-buttons-color: rgb(100, 150, 240);
-    --action-buttons-color-border: rgb(80, 130, 220);
-    --action-buttons-color-hover: rgb(80, 130, 220);
-    --action-buttons-color-border-hover: rgb(60, 110, 200);
-    --action-buttons-color-click: rgb(60, 110, 200);
-    --action-buttons-color-border-click: rgb(40, 90, 180);
-  
-    --secondary-buttons-color: var(--component-color-hover);
-    --secondary-buttons-color-border: var(--component-color-border-hover);
-    --secondary-buttons-color-hover: var(--component-color-click);
-    --secondary-buttons-color-border-hover: var(--component-color-border-click);
-    --secondary-buttons-color-click: rgb(125, 125, 125);
-    --secondary-buttons-color-border-click: rgb(85, 85, 85);
-
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-    
-    --tester: 255, 255, 255;
-  }
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  background-color: rgb(73, 73, 73);
+  background-color: var(--background-color);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -135,7 +99,7 @@ body {
   height: 85vh;
   width: auto;
   padding: 64px 4vw 0 4vw;
-  gap: 4em;
+  gap: 2rem;
 }
 
 .title-container {
@@ -207,12 +171,20 @@ body {
   }
 }
 
+.flashcardParent {
+  width: 100%;
+}
 
-.card {
-  padding: 1rem 1.2rem;
-  background: rgba(var(--card-rgb), 0);
-  background-color: var(--tester);
-  border: 1px solid rgba(var(--card-border-rgb), 100);
-  border-radius: var(--border-radius);
-  transition: background 200ms, border 200ms;
+@media (min-width: 1921px) {
+  
+}
+
+@media (min-width: 1001px) and (max-width: 1921px) {
+  
+}
+
+@media (max-width: 1000px) {
+  .main-container {
+    gap: 0;
+  }
 }

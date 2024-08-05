@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
-  width: 61vw;
+  height: auto;
+  width: auto;
   margin-top: 4vh;
-  padding: 0 1em 0 1em;
+  padding: 1rem;
   background-color: rgb(206, 204, 204);
   border: 2px solid gray;
   border-radius: 1em;  
@@ -15,21 +15,25 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 35vw;
-  gap: 2em;
+  width: 100%;
+  gap: 1rem;
 }
 
 .actions-container {
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 25vw;
-  gap: 2em;
+  width: 100%;
+  gap: 1em;
 }
 
 .action-button {
-  height: 6vh;
-  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 1rem;
   background-color: var(--action-buttons-color);
   border: 2px solid var(--action-buttons-color-border);
   border-radius: 12px;
@@ -49,8 +53,12 @@
 }
 
 .rating-button {
-  height: 6vh;
-  width: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
   background-color: var(--secondary-buttons-color);
   border: 2px solid var(--secondary-buttons-color-border);
   border-radius: 12px;
@@ -66,5 +74,54 @@
   &:active {
     background-color: var(--secondary-buttons-color-click);;
     border: 2px solid var(--secondary-buttons-color-border-click);
+  }
+}
+
+@media (min-width: 1921px) {
+  .lower-buttons-container {
+    
+  }
+  .action-button {
+    min-height: 48px;
+    min-width: 96px;
+  }
+  .rating-button {
+    min-height: 48px;
+    min-width: 64px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1921px) {
+  .lower-buttons-container {
+    
+  }
+  .action-button {
+    min-height: 48px;
+    min-width: 96px;
+  }
+  .rating-button {
+    min-height: 32px;
+    min-width: 48px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .lower-buttons-container {
+    flex-flow: column-reverse;
+    gap: 1rem;
+  }
+  .ratings-container {
+    justify-content: center;
+  }
+  .actions-container {
+    justify-content: center;
+  }
+  .action-button {
+    min-height: 32px;
+    min-width: 96px;
+  }
+  .rating-button {
+    min-height: 32px;
+    min-width: 48px;
   }
 }

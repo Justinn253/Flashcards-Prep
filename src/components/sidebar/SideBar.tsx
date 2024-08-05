@@ -10,7 +10,7 @@ const SideBar = ({pQuestions, pNav, pCurrentIndex}: any) => {
       <div className='sidebar-content'>
         {pQuestions.map((item: any, i: number) => {
           return (
-            <div className={pCurrentIndex == i ? 'sidebar-current-item' : 'sidebar-item'} key={item.id} onClick={() => pNav(item.id)}>
+            <div className={pCurrentIndex == i ? 'sidebar-current-item' : 'sidebar-item'} key={item.id} onClick={() => pNav(i + 1)}>
               <div><b>({item.knowledgeLevel})</b> {item.title}</div> 
               <div>{i + 1}</div>
             </div>

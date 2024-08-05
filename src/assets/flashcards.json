@@ -113,6 +113,7 @@
     "title": "Inheritance",
     "subject": "OOP Pillars",
     "definition": [
+      "Refers to using the structure and behavior of a super class in a subclass",
       "Lets one object inherit the properties of another.",
       "Refers to super/sub classes."
     ],
@@ -126,6 +127,7 @@
     "title": "Polymorphism",
     "subject": "OOP Pillars",
     "definition": [
+      "Refers to changig the behavior of a super class in a subclass",
       "When two types share an inheritance chain, they can be used interchangably with no errors or assertions.",
       "Basically should be able to user inherited functions with no issues."
     ],

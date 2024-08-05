@@ -1,4 +1,4 @@
-import { ChangeEvent, ChangeEventHandler, KeyboardEvent, useEffect, useState } from 'react';
+import { ChangeEvent, KeyboardEvent, useEffect, useState } from 'react';
 import Flashcard from './components/flashcard/Flashcard';
 import SideBar from './components/sidebar/SideBar';
 import LowerButtons from './components/lower-buttons/LowerButtons';
@@ -12,6 +12,8 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState<iFlashcard>(questions[0]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [category, setCategory] = useState('none');
+  const [knowledgeLevel, setKnowledgeLevel] = useState('5');
 
   useEffect(() => {
     setQuestions(dataSet);
@@ -106,16 +108,26 @@ function App() {
     switch (type) {
       case 'category':
         if (e.target.value !== 'none') {
-          filterRes = dataSet.filter((item: iFlashcard) => item.category == e.target.value);
+          filterRes = dataSet
+            .filter((item: iFlashcard) => item.category === e.target.value)
+            .filter((item: iFlashcard) => item.knowledgeLevel <= knowledgeLevel);
+          setCategory(e.target.value);
         }
         break;
       case 'knowledge':
-        filterRes = questions.filter((item: iFlashcard) => item.knowledgeLevel <= e.target.value);
+        filterRes = dataSet
+          .filter((item: iFlashcard) => item.category === category)
+          .filter((item: iFlashcard) => item.knowledgeLevel <= e.target.value);
+        setKnowledgeLevel(e.target.value);
         break;
       default:
         break;
     }
-    setQuestions(filterRes);
+    if (filterRes.length !== 0) {
+      setQuestions(filterRes);
+    }
+    setCurrentIndex(0);
+    setCurrentQuestion(questions[0]);
   }
 
   /**
@@ -142,14 +154,14 @@ function App() {
     <>
       <header className='page-header'>
         <section className='header-filter-section' id='header-filter-section'>
-          <select className='filter-select' onChange={(e) => filterQuestions(e, 'category')} title='Filter by Category'>
+          <select className='filter-select' onChange={(e) => filterQuestions(e, 'category')} title='Filter by Category' id='category-filter'>
             <option value="none">No Category Filter</option>
             <option value="fundamentals">Fundamentals</option>
             <option value="frontend">Frontend</option>
             <option value="dsa">DSA</option>
             <option value="general" >General</option>
           </select>
-          <select className='filter-select' onChange={(e) => filterQuestions(e, 'knowledge')} title='Filter by Knowledge Level'>
+          <select className='filter-select' onChange={(e) => filterQuestions(e, 'knowledge')} title='Filter by Knowledge Level' id='knowledge-filter'>
             <option value="5">All knowledge levels</option>
             <option value="4">4's and below</option>
             <option value="3">3's and below</option>
@@ -159,7 +171,7 @@ function App() {
         </section>
         <section className='header-buttons-section' id='header-buttons-section'>
           <button className='header-button' onClick={randomizeQuestions} title='Randomize Questions'><BsShuffle size = '24'/></button>
-          <button className='card'>Style Tester</button>
+          {/* <button className='card'>Style Tester</button> */}
         </section>
         
       </header>
@@ -167,7 +179,7 @@ function App() {
         <section id='sidebar-section'>
           <SideBar pQuestions={questions} pNav={getNav} pCurrentIndex={currentIndex}></SideBar>
         </section>
-        <section id='flashcard-parent-section'>
+        <section id='flashcard-parent-section' className='flashcardParent'>
           <section id='flashcard-section'>
             <Flashcard pQuestions={questions} pCurrentIndex={currentIndex} pCurrentQuestion={currentQuestion} pFlipped={flipped} pRevealAnswer={revealAnswer}></Flashcard>
           </section>
@@ -176,8 +188,8 @@ function App() {
           </section>
         </section>
       </main>
-      <footer className='page-footer'>
-        test
+      <footer>
+        
       </footer>
     </>
   );

@@ -57,3 +57,17 @@
   border-radius: 4px;
   font-weight: 500;
 }
+
+@media (min-width: 1921px) {
+  
+}
+
+@media (min-width: 1001px) and (max-width: 1921px) {
+  
+}
+
+@media (max-width: 1000px) {
+  .sidebar-container {
+    display: none;
+  }
+}
