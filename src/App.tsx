@@ -84,19 +84,19 @@ function App() {
    * @param event keyboard event used to check if button was 'enter'
    * @updates flipped, currentIndex, currentQuestion
    */
-  const handleEnter = (event: KeyboardEvent) => {
-    if (event.key === 'Enter') {
-      if (!flipped) {
-        setFlipped(true);
-      } else {
-        if (currentIndex < questions.length - 1) {
-          setFlipped(false);
-          setCurrentIndex(currentIndex + 1);
-          setCurrentQuestion(questions[currentIndex + 1]);
-        }
-      }
-    }
-  }
+  // const handleEnter = (event: KeyboardEvent) => {
+  //   if (event.key === 'Enter') {
+  //     if (!flipped) {
+  //       setFlipped(true);
+  //     } else {
+  //       if (currentIndex < questions.length - 1) {
+  //         setFlipped(false);
+  //         setCurrentIndex(currentIndex + 1);
+  //         setCurrentQuestion(questions[currentIndex + 1]);
+  //       }
+  //     }
+  //   }
+  // }
 
   /**
    * Method call to filter questions list by category.
