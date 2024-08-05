@@ -1,4 +1,4 @@
-import { ChangeEvent, KeyboardEvent, useEffect, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import Flashcard from './components/flashcard/Flashcard';
 import SideBar from './components/sidebar/SideBar';
 import LowerButtons from './components/lower-buttons/LowerButtons';
