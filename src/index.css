@@ -74,13 +74,25 @@ body {
 }
 
 .page-header {
-  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 64px;
   width: 100%;
-  background-color: rgb(48, 48, 48);
+}
+
+.header-fix {
+  position: fixed;
+  display: inline-block;
+  height: 64px;
+  width: 100%;
+}
+
+.header-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .page-footer {
@@ -98,26 +110,16 @@ body {
   flex-direction: row;
   height: 85vh;
   width: auto;
-  padding: 64px 4vw 0 4vw;
+  padding: 0 4vw 0 4vw;
   gap: 2rem;
-}
-
-.title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 1vw 0 1vw;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.line-break {
-  margin: 1vh 0 1vh 0;
-  border-top: 1px solid gray;
+  box-sizing: border-box;
 }
 
 .filter-select {
   appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 150px;
   min-height: 30px;
   background-color: rgb(206, 204, 204);
@@ -131,10 +133,11 @@ body {
 
 .header-filter-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
-  width: 40%;
+  width: 80%;
+  padding-left: 1rem;
 }
 
 .header-buttons-section {
@@ -186,5 +189,23 @@ body {
 @media (max-width: 1000px) {
   .main-container {
     gap: 0;
+  }
+  .page-header {
+    height: 44px;
+  }
+  .header-fix {
+    height: 44px;
+  }
+  .header-button {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .filter-select {
+    min-width: 120px;
+    min-height: 20px;
+    font-size: 12px;
+  }
+  .header-filter-section {
+    gap: 8px;
   }
 }

@@ -153,27 +153,30 @@ function App() {
   return (
     <>
       <header className='page-header'>
-        <section className='header-filter-section' id='header-filter-section'>
-          <select className='filter-select' onChange={(e) => filterQuestions(e, 'category')} title='Filter by Category' id='category-filter'>
-            <option value="none">No Category Filter</option>
-            <option value="fundamentals">Fundamentals</option>
-            <option value="frontend">Frontend</option>
-            <option value="dsa">DSA</option>
-            <option value="general" >General</option>
-          </select>
-          <select className='filter-select' onChange={(e) => filterQuestions(e, 'knowledge')} title='Filter by Knowledge Level' id='knowledge-filter'>
-            <option value="5">All knowledge levels</option>
-            <option value="4">4's and below</option>
-            <option value="3">3's and below</option>
-            <option value="2">2's and below</option>
-            <option value="1">Only 1's</option>
-          </select>
+        <section className='header-fix'>
+          <div className='header-all'>
+            <div className='header-filter-section' id='header-filter-section'>
+              <select className='filter-select' onChange={(e) => filterQuestions(e, 'category')} title='Filter by Category' id='category-filter'>
+                <option value="none">No Category Filter</option>
+                <option value="fundamentals">Fundamentals</option>
+                <option value="frontend">Frontend</option>
+                <option value="dsa">DSA</option>
+                <option value="general" >General</option>
+              </select>
+              <select className='filter-select' onChange={(e) => filterQuestions(e, 'knowledge')} title='Filter by Knowledge Level' id='knowledge-filter'>
+                <option value="5">All knowledge levels</option>
+                <option value="4">4's and below</option>
+                <option value="3">3's and below</option>
+                <option value="2">2's and below</option>
+                <option value="1">Only 1's</option>
+              </select>
+            </div>
+            <div className='header-buttons-section' id='header-buttons-section'>
+              <button className='header-button' onClick={randomizeQuestions} title='Randomize Questions'><BsShuffle size = '24'/></button>
+              {/* <button className='card'>Style Tester</button> */}
+            </div>
+          </div>
         </section>
-        <section className='header-buttons-section' id='header-buttons-section'>
-          <button className='header-button' onClick={randomizeQuestions} title='Randomize Questions'><BsShuffle size = '24'/></button>
-          {/* <button className='card'>Style Tester</button> */}
-        </section>
-        
       </header>
       <main className="main-container">
         <section id='sidebar-section'>

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 64px;
   width: auto;
   margin-top: 4vh;
   padding: 1rem;
@@ -96,8 +96,8 @@
     
   }
   .action-button {
-    min-height: 48px;
-    min-width: 96px;
+    height: 48px;
+    width: 96px;
   }
   .rating-button {
     min-height: 32px;
@@ -108,7 +108,8 @@
 @media (max-width: 1000px) {
   .lower-buttons-container {
     flex-flow: column-reverse;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin-top: 2vh;
   }
   .ratings-container {
     justify-content: center;
@@ -117,11 +118,13 @@
     justify-content: center;
   }
   .action-button {
-    min-height: 32px;
-    min-width: 96px;
+    height: 16px;
+    width: 54px;
+    font-size: 12px;
   }
   .rating-button {
-    min-height: 32px;
-    min-width: 48px;
+    min-height: 16px;
+    min-width: 32px;
+    font-size: 12px;
   }
 }
