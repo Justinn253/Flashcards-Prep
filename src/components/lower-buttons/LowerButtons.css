@@ -8,7 +8,7 @@
   padding: 1rem;
   background-color: rgb(206, 204, 204);
   border: 2px solid gray;
-  border-radius: 1em;  
+  border-radius: 1em;
 }
 
 .ratings-container {
@@ -51,6 +51,23 @@
     border: 2px solid var(--action-buttons-color-border-click);
   }
 }
+
+.green {
+  background-color: var(--action-buttons-color-2);
+  border: 2px solid var(--action-buttons-color-border-2);
+  transition: background 200ms, border 200ms;
+
+  &:hover {
+    background-color: var(--action-buttons-color-hover-2);
+    border: 2px solid var(--action-buttons-color-border-hover-2);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--action-buttons-color-click-2);
+    border: 2px solid var(--action-buttons-color-border-click-2);
+  }
+}
+
 
 .rating-button {
   display: flex;
@@ -118,13 +135,15 @@
     justify-content: center;
   }
   .action-button {
-    height: 16px;
-    width: 54px;
-    font-size: 12px;
+    min-height: 16px;
+    min-width: 64px;
+    font-size: 14px;
+    padding: 0.5rem;
   }
   .rating-button {
     min-height: 16px;
     min-width: 32px;
-    font-size: 12px;
+    font-size: 14px;
+    padding: 0.35rem;
   }
 }

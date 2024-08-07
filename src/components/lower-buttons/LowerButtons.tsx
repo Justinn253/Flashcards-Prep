@@ -12,8 +12,8 @@ const LowerButtons = ({pRevealAnswer, pBack, pNext, pAssignKnowledge}: any) => {
         <button className="rating-button highest" onClick={() => pAssignKnowledge('5')}>5</button>
       </div>
       <div className="actions-container">
-        <button className="action-button" onClick={pRevealAnswer}>Flip</button>
         <button className="action-button" onClick={pBack}>Back</button>
+        <button className="action-button green" onClick={pRevealAnswer}>Flip</button>
         <button className="action-button" onClick={pNext}>Next</button>
       </div>
     </div>

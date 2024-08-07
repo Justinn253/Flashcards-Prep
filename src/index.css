@@ -27,6 +27,12 @@
   --action-buttons-color-border-hover: rgba(60, 110, 200, 1);
   --action-buttons-color-click: rgba(60, 110, 200, 1);
   --action-buttons-color-border-click: rgba(40, 90, 180, 1);
+  --action-buttons-color-2: rgba(140, 220, 130, 1);
+  --action-buttons-color-border-2: rgba(120, 200, 110, 1);
+  --action-buttons-color-hover-2: rgba(120, 200, 110, 1);
+  --action-buttons-color-border-hover-2: rgba(100, 180, 90, 1);
+  --action-buttons-color-click-2: rgba(100, 180, 90, 1);
+  --action-buttons-color-border-click-2: rgba(80, 160, 70, 1);
 
   --secondary-buttons-color: var(--component-color-hover);
   --secondary-buttons-color-border: var(--component-color-border-hover);
@@ -71,6 +77,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .page-header {
@@ -197,13 +207,14 @@ body {
     height: 44px;
   }
   .header-button {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.25rem;
+    width: 2.25rem;
   }
   .filter-select {
     min-width: 120px;
-    min-height: 20px;
+    min-height: 24px;
     font-size: 12px;
+    text-align: center;
   }
   .header-filter-section {
     gap: 8px;
